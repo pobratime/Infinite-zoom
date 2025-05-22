@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/dependencies -isystem /opt/homebrew/include -isystem /usr/local/include -g -arch arm64 -o CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o -c /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/main.cpp",
+  "file": "/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/main.cpp",
+  "output": "CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o"
+}
+]

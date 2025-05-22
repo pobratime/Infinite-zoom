@@ -1,0 +1,1 @@
+/opt/homebrew/opt/llvm/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o -o infinite_zoom_vulkan  -Wl,-rpath,/opt/homebrew/lib -Wl,-rpath,/usr/local/lib /opt/homebrew/lib/libglfw.3.4.dylib /usr/local/lib/libvulkan.dylib

@@ -1,0 +1,3 @@
+/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build/CMakeFiles/infinite_zoom_vulkan.dir
+/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build/CMakeFiles/edit_cache.dir
+/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build/CMakeFiles/rebuild_cache.dir
