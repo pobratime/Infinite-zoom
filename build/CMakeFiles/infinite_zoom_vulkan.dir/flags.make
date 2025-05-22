@@ -4,9 +4,9 @@
 # compile CXX with /opt/homebrew/opt/llvm/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/dependencies -isystem /opt/homebrew/include -isystem /usr/local/include
+CXX_INCLUDES = -I/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src -I/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/dependencies -isystem /opt/homebrew/include -isystem /usr/local/include
 
-CXX_FLAGSarm64 = -g -arch arm64
+CXX_FLAGSarm64 = -g -std=gnu++17 -arch arm64
 
-CXX_FLAGS = -g -arch arm64
+CXX_FLAGS = -g -std=gnu++17 -arch arm64
 

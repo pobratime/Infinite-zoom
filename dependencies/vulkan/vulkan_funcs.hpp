@@ -5851,48 +5851,48 @@ namespace VULKAN_HPP_NAMESPACE
   }
 #endif /* VULKAN_HPP_DISABLE_ENHANCED_MODE */
 
-  // wrapper function for command vkCmdResolveImage, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResolveImage.html
+  // wrapper function for command vkCmdResoinfvlkImage, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResoinfvlkImage.html
   template <typename Dispatch>
-  VULKAN_HPP_INLINE void CommandBuffer::resolveImage( VULKAN_HPP_NAMESPACE::Image                srcImage,
+  VULKAN_HPP_INLINE void CommandBuffer::resoinfvlkImage( VULKAN_HPP_NAMESPACE::Image                srcImage,
                                                       VULKAN_HPP_NAMESPACE::ImageLayout          srcImageLayout,
                                                       VULKAN_HPP_NAMESPACE::Image                dstImage,
                                                       VULKAN_HPP_NAMESPACE::ImageLayout          dstImageLayout,
                                                       uint32_t                                   regionCount,
-                                                      const VULKAN_HPP_NAMESPACE::ImageResolve * pRegions,
+                                                      const VULKAN_HPP_NAMESPACE::ImageResoinfvlk * pRegions,
                                                       Dispatch const &                           d ) const VULKAN_HPP_NOEXCEPT
   {
     VULKAN_HPP_ASSERT( d.getVkHeaderVersion() == VK_HEADER_VERSION );
-    d.vkCmdResolveImage( static_cast<VkCommandBuffer>( m_commandBuffer ),
+    d.vkCmdResoinfvlkImage( static_cast<VkCommandBuffer>( m_commandBuffer ),
                          static_cast<VkImage>( srcImage ),
                          static_cast<VkImageLayout>( srcImageLayout ),
                          static_cast<VkImage>( dstImage ),
                          static_cast<VkImageLayout>( dstImageLayout ),
                          regionCount,
-                         reinterpret_cast<const VkImageResolve *>( pRegions ) );
+                         reinterpret_cast<const VkImageResoinfvlk *>( pRegions ) );
   }
 
 #ifndef VULKAN_HPP_DISABLE_ENHANCED_MODE
-  // wrapper function for command vkCmdResolveImage, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResolveImage.html
+  // wrapper function for command vkCmdResoinfvlkImage, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResoinfvlkImage.html
   template <typename Dispatch>
-  VULKAN_HPP_INLINE void CommandBuffer::resolveImage( VULKAN_HPP_NAMESPACE::Image                                                        srcImage,
+  VULKAN_HPP_INLINE void CommandBuffer::resoinfvlkImage( VULKAN_HPP_NAMESPACE::Image                                                        srcImage,
                                                       VULKAN_HPP_NAMESPACE::ImageLayout                                                  srcImageLayout,
                                                       VULKAN_HPP_NAMESPACE::Image                                                        dstImage,
                                                       VULKAN_HPP_NAMESPACE::ImageLayout                                                  dstImageLayout,
-                                                      VULKAN_HPP_NAMESPACE::ArrayProxy<const VULKAN_HPP_NAMESPACE::ImageResolve> const & regions,
+                                                      VULKAN_HPP_NAMESPACE::ArrayProxy<const VULKAN_HPP_NAMESPACE::ImageResoinfvlk> const & regions,
                                                       Dispatch const & d ) const VULKAN_HPP_NOEXCEPT
   {
     VULKAN_HPP_ASSERT( d.getVkHeaderVersion() == VK_HEADER_VERSION );
 #  if ( VULKAN_HPP_DISPATCH_LOADER_DYNAMIC == 1 )
-    VULKAN_HPP_ASSERT( d.vkCmdResolveImage && "Function <vkCmdResolveImage> requires <VK_VERSION_1_0>" );
+    VULKAN_HPP_ASSERT( d.vkCmdResoinfvlkImage && "Function <vkCmdResoinfvlkImage> requires <VK_VERSION_1_0>" );
 #  endif
 
-    d.vkCmdResolveImage( m_commandBuffer,
+    d.vkCmdResoinfvlkImage( m_commandBuffer,
                          static_cast<VkImage>( srcImage ),
                          static_cast<VkImageLayout>( srcImageLayout ),
                          static_cast<VkImage>( dstImage ),
                          static_cast<VkImageLayout>( dstImageLayout ),
                          regions.size(),
-                         reinterpret_cast<const VkImageResolve *>( regions.data() ) );
+                         reinterpret_cast<const VkImageResoinfvlk *>( regions.data() ) );
   }
 #endif /* VULKAN_HPP_DISABLE_ENHANCED_MODE */
 
@@ -8582,27 +8582,27 @@ namespace VULKAN_HPP_NAMESPACE
   }
 #endif /* VULKAN_HPP_DISABLE_ENHANCED_MODE */
 
-  // wrapper function for command vkCmdResolveImage2, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResolveImage2.html
+  // wrapper function for command vkCmdResoinfvlkImage2, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResoinfvlkImage2.html
   template <typename Dispatch>
-  VULKAN_HPP_INLINE void CommandBuffer::resolveImage2( const VULKAN_HPP_NAMESPACE::ResolveImageInfo2 * pResolveImageInfo,
+  VULKAN_HPP_INLINE void CommandBuffer::resoinfvlkImage2( const VULKAN_HPP_NAMESPACE::ResoinfvlkImageInfo2 * pResoinfvlkImageInfo,
                                                        Dispatch const &                                d ) const VULKAN_HPP_NOEXCEPT
   {
     VULKAN_HPP_ASSERT( d.getVkHeaderVersion() == VK_HEADER_VERSION );
-    d.vkCmdResolveImage2( static_cast<VkCommandBuffer>( m_commandBuffer ), reinterpret_cast<const VkResolveImageInfo2 *>( pResolveImageInfo ) );
+    d.vkCmdResoinfvlkImage2( static_cast<VkCommandBuffer>( m_commandBuffer ), reinterpret_cast<const VkResoinfvlkImageInfo2 *>( pResoinfvlkImageInfo ) );
   }
 
 #ifndef VULKAN_HPP_DISABLE_ENHANCED_MODE
-  // wrapper function for command vkCmdResolveImage2, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResolveImage2.html
+  // wrapper function for command vkCmdResoinfvlkImage2, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResoinfvlkImage2.html
   template <typename Dispatch>
-  VULKAN_HPP_INLINE void CommandBuffer::resolveImage2( const VULKAN_HPP_NAMESPACE::ResolveImageInfo2 & resolveImageInfo,
+  VULKAN_HPP_INLINE void CommandBuffer::resoinfvlkImage2( const VULKAN_HPP_NAMESPACE::ResoinfvlkImageInfo2 & resoinfvlkImageInfo,
                                                        Dispatch const &                                d ) const VULKAN_HPP_NOEXCEPT
   {
     VULKAN_HPP_ASSERT( d.getVkHeaderVersion() == VK_HEADER_VERSION );
 #  if ( VULKAN_HPP_DISPATCH_LOADER_DYNAMIC == 1 )
-    VULKAN_HPP_ASSERT( d.vkCmdResolveImage2 && "Function <vkCmdResolveImage2> requires <VK_KHR_copy_commands2> or <VK_VERSION_1_3>" );
+    VULKAN_HPP_ASSERT( d.vkCmdResoinfvlkImage2 && "Function <vkCmdResoinfvlkImage2> requires <VK_KHR_copy_commands2> or <VK_VERSION_1_3>" );
 #  endif
 
-    d.vkCmdResolveImage2( m_commandBuffer, reinterpret_cast<const VkResolveImageInfo2 *>( &resolveImageInfo ) );
+    d.vkCmdResoinfvlkImage2( m_commandBuffer, reinterpret_cast<const VkResoinfvlkImageInfo2 *>( &resoinfvlkImageInfo ) );
   }
 #endif /* VULKAN_HPP_DISABLE_ENHANCED_MODE */
 
@@ -25744,27 +25744,27 @@ namespace VULKAN_HPP_NAMESPACE
   }
 #endif /* VULKAN_HPP_DISABLE_ENHANCED_MODE */
 
-  // wrapper function for command vkCmdResolveImage2KHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResolveImage2KHR.html
+  // wrapper function for command vkCmdResoinfvlkImage2KHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResoinfvlkImage2KHR.html
   template <typename Dispatch>
-  VULKAN_HPP_INLINE void CommandBuffer::resolveImage2KHR( const VULKAN_HPP_NAMESPACE::ResolveImageInfo2 * pResolveImageInfo,
+  VULKAN_HPP_INLINE void CommandBuffer::resoinfvlkImage2KHR( const VULKAN_HPP_NAMESPACE::ResoinfvlkImageInfo2 * pResoinfvlkImageInfo,
                                                           Dispatch const &                                d ) const VULKAN_HPP_NOEXCEPT
   {
     VULKAN_HPP_ASSERT( d.getVkHeaderVersion() == VK_HEADER_VERSION );
-    d.vkCmdResolveImage2KHR( static_cast<VkCommandBuffer>( m_commandBuffer ), reinterpret_cast<const VkResolveImageInfo2 *>( pResolveImageInfo ) );
+    d.vkCmdResoinfvlkImage2KHR( static_cast<VkCommandBuffer>( m_commandBuffer ), reinterpret_cast<const VkResoinfvlkImageInfo2 *>( pResoinfvlkImageInfo ) );
   }
 
 #ifndef VULKAN_HPP_DISABLE_ENHANCED_MODE
-  // wrapper function for command vkCmdResolveImage2KHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResolveImage2KHR.html
+  // wrapper function for command vkCmdResoinfvlkImage2KHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResoinfvlkImage2KHR.html
   template <typename Dispatch>
-  VULKAN_HPP_INLINE void CommandBuffer::resolveImage2KHR( const VULKAN_HPP_NAMESPACE::ResolveImageInfo2 & resolveImageInfo,
+  VULKAN_HPP_INLINE void CommandBuffer::resoinfvlkImage2KHR( const VULKAN_HPP_NAMESPACE::ResoinfvlkImageInfo2 & resoinfvlkImageInfo,
                                                           Dispatch const &                                d ) const VULKAN_HPP_NOEXCEPT
   {
     VULKAN_HPP_ASSERT( d.getVkHeaderVersion() == VK_HEADER_VERSION );
 #  if ( VULKAN_HPP_DISPATCH_LOADER_DYNAMIC == 1 )
-    VULKAN_HPP_ASSERT( d.vkCmdResolveImage2KHR && "Function <vkCmdResolveImage2KHR> requires <VK_KHR_copy_commands2> or <VK_VERSION_1_3>" );
+    VULKAN_HPP_ASSERT( d.vkCmdResoinfvlkImage2KHR && "Function <vkCmdResoinfvlkImage2KHR> requires <VK_KHR_copy_commands2> or <VK_VERSION_1_3>" );
 #  endif
 
-    d.vkCmdResolveImage2KHR( m_commandBuffer, reinterpret_cast<const VkResolveImageInfo2 *>( &resolveImageInfo ) );
+    d.vkCmdResoinfvlkImage2KHR( m_commandBuffer, reinterpret_cast<const VkResoinfvlkImageInfo2 *>( &resoinfvlkImageInfo ) );
   }
 #endif /* VULKAN_HPP_DISABLE_ENHANCED_MODE */
 
@@ -27593,69 +27593,69 @@ namespace VULKAN_HPP_NAMESPACE
   }
 #endif /* VULKAN_HPP_DISABLE_ENHANCED_MODE */
 
-  //=== VK_VALVE_descriptor_set_host_mapping ===
+  //=== VK_VAinfvlk_descriptor_set_host_mapping ===
 
-  // wrapper function for command vkGetDescriptorSetLayoutHostMappingInfoVALVE, see
-  // https://registry.khronos.org/vulkan/specs/latest/man/html/vkGetDescriptorSetLayoutHostMappingInfoVALVE.html
+  // wrapper function for command vkGetDescriptorSetLayoutHostMappingInfoVAinfvlk, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/vkGetDescriptorSetLayoutHostMappingInfoVAinfvlk.html
   template <typename Dispatch>
-  VULKAN_HPP_INLINE void Device::getDescriptorSetLayoutHostMappingInfoVALVE( const VULKAN_HPP_NAMESPACE::DescriptorSetBindingReferenceVALVE * pBindingReference,
-                                                                             VULKAN_HPP_NAMESPACE::DescriptorSetLayoutHostMappingInfoVALVE *  pHostMapping,
+  VULKAN_HPP_INLINE void Device::getDescriptorSetLayoutHostMappingInfoVAinfvlk( const VULKAN_HPP_NAMESPACE::DescriptorSetBindingReferenceVAinfvlk * pBindingReference,
+                                                                             VULKAN_HPP_NAMESPACE::DescriptorSetLayoutHostMappingInfoVAinfvlk *  pHostMapping,
                                                                              Dispatch const & d ) const VULKAN_HPP_NOEXCEPT
   {
     VULKAN_HPP_ASSERT( d.getVkHeaderVersion() == VK_HEADER_VERSION );
-    d.vkGetDescriptorSetLayoutHostMappingInfoVALVE( static_cast<VkDevice>( m_device ),
-                                                    reinterpret_cast<const VkDescriptorSetBindingReferenceVALVE *>( pBindingReference ),
-                                                    reinterpret_cast<VkDescriptorSetLayoutHostMappingInfoVALVE *>( pHostMapping ) );
+    d.vkGetDescriptorSetLayoutHostMappingInfoVAinfvlk( static_cast<VkDevice>( m_device ),
+                                                    reinterpret_cast<const VkDescriptorSetBindingReferenceVAinfvlk *>( pBindingReference ),
+                                                    reinterpret_cast<VkDescriptorSetLayoutHostMappingInfoVAinfvlk *>( pHostMapping ) );
   }
 
 #ifndef VULKAN_HPP_DISABLE_ENHANCED_MODE
-  // wrapper function for command vkGetDescriptorSetLayoutHostMappingInfoVALVE, see
-  // https://registry.khronos.org/vulkan/specs/latest/man/html/vkGetDescriptorSetLayoutHostMappingInfoVALVE.html
+  // wrapper function for command vkGetDescriptorSetLayoutHostMappingInfoVAinfvlk, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/vkGetDescriptorSetLayoutHostMappingInfoVAinfvlk.html
   template <typename Dispatch>
-  VULKAN_HPP_NODISCARD VULKAN_HPP_INLINE VULKAN_HPP_NAMESPACE::DescriptorSetLayoutHostMappingInfoVALVE
-    Device::getDescriptorSetLayoutHostMappingInfoVALVE( const VULKAN_HPP_NAMESPACE::DescriptorSetBindingReferenceVALVE & bindingReference,
+  VULKAN_HPP_NODISCARD VULKAN_HPP_INLINE VULKAN_HPP_NAMESPACE::DescriptorSetLayoutHostMappingInfoVAinfvlk
+    Device::getDescriptorSetLayoutHostMappingInfoVAinfvlk( const VULKAN_HPP_NAMESPACE::DescriptorSetBindingReferenceVAinfvlk & bindingReference,
                                                         Dispatch const &                                                 d ) const VULKAN_HPP_NOEXCEPT
   {
     VULKAN_HPP_ASSERT( d.getVkHeaderVersion() == VK_HEADER_VERSION );
 #  if ( VULKAN_HPP_DISPATCH_LOADER_DYNAMIC == 1 )
-    VULKAN_HPP_ASSERT( d.vkGetDescriptorSetLayoutHostMappingInfoVALVE &&
-                       "Function <vkGetDescriptorSetLayoutHostMappingInfoVALVE> requires <VK_VALVE_descriptor_set_host_mapping>" );
+    VULKAN_HPP_ASSERT( d.vkGetDescriptorSetLayoutHostMappingInfoVAinfvlk &&
+                       "Function <vkGetDescriptorSetLayoutHostMappingInfoVAinfvlk> requires <VK_VAinfvlk_descriptor_set_host_mapping>" );
 #  endif
 
-    VULKAN_HPP_NAMESPACE::DescriptorSetLayoutHostMappingInfoVALVE hostMapping;
-    d.vkGetDescriptorSetLayoutHostMappingInfoVALVE( m_device,
-                                                    reinterpret_cast<const VkDescriptorSetBindingReferenceVALVE *>( &bindingReference ),
-                                                    reinterpret_cast<VkDescriptorSetLayoutHostMappingInfoVALVE *>( &hostMapping ) );
+    VULKAN_HPP_NAMESPACE::DescriptorSetLayoutHostMappingInfoVAinfvlk hostMapping;
+    d.vkGetDescriptorSetLayoutHostMappingInfoVAinfvlk( m_device,
+                                                    reinterpret_cast<const VkDescriptorSetBindingReferenceVAinfvlk *>( &bindingReference ),
+                                                    reinterpret_cast<VkDescriptorSetLayoutHostMappingInfoVAinfvlk *>( &hostMapping ) );
 
     return hostMapping;
   }
 #endif /* VULKAN_HPP_DISABLE_ENHANCED_MODE */
 
-  // wrapper function for command vkGetDescriptorSetHostMappingVALVE, see
-  // https://registry.khronos.org/vulkan/specs/latest/man/html/vkGetDescriptorSetHostMappingVALVE.html
+  // wrapper function for command vkGetDescriptorSetHostMappingVAinfvlk, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/vkGetDescriptorSetHostMappingVAinfvlk.html
   template <typename Dispatch>
   VULKAN_HPP_INLINE void
-    Device::getDescriptorSetHostMappingVALVE( VULKAN_HPP_NAMESPACE::DescriptorSet descriptorSet, void ** ppData, Dispatch const & d ) const VULKAN_HPP_NOEXCEPT
+    Device::getDescriptorSetHostMappingVAinfvlk( VULKAN_HPP_NAMESPACE::DescriptorSet descriptorSet, void ** ppData, Dispatch const & d ) const VULKAN_HPP_NOEXCEPT
   {
     VULKAN_HPP_ASSERT( d.getVkHeaderVersion() == VK_HEADER_VERSION );
-    d.vkGetDescriptorSetHostMappingVALVE( static_cast<VkDevice>( m_device ), static_cast<VkDescriptorSet>( descriptorSet ), ppData );
+    d.vkGetDescriptorSetHostMappingVAinfvlk( static_cast<VkDevice>( m_device ), static_cast<VkDescriptorSet>( descriptorSet ), ppData );
   }
 
 #ifndef VULKAN_HPP_DISABLE_ENHANCED_MODE
-  // wrapper function for command vkGetDescriptorSetHostMappingVALVE, see
-  // https://registry.khronos.org/vulkan/specs/latest/man/html/vkGetDescriptorSetHostMappingVALVE.html
+  // wrapper function for command vkGetDescriptorSetHostMappingVAinfvlk, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/vkGetDescriptorSetHostMappingVAinfvlk.html
   template <typename Dispatch>
-  VULKAN_HPP_NODISCARD VULKAN_HPP_INLINE void * Device::getDescriptorSetHostMappingVALVE( VULKAN_HPP_NAMESPACE::DescriptorSet descriptorSet,
+  VULKAN_HPP_NODISCARD VULKAN_HPP_INLINE void * Device::getDescriptorSetHostMappingVAinfvlk( VULKAN_HPP_NAMESPACE::DescriptorSet descriptorSet,
                                                                                           Dispatch const &                    d ) const VULKAN_HPP_NOEXCEPT
   {
     VULKAN_HPP_ASSERT( d.getVkHeaderVersion() == VK_HEADER_VERSION );
 #  if ( VULKAN_HPP_DISPATCH_LOADER_DYNAMIC == 1 )
-    VULKAN_HPP_ASSERT( d.vkGetDescriptorSetHostMappingVALVE &&
-                       "Function <vkGetDescriptorSetHostMappingVALVE> requires <VK_VALVE_descriptor_set_host_mapping>" );
+    VULKAN_HPP_ASSERT( d.vkGetDescriptorSetHostMappingVAinfvlk &&
+                       "Function <vkGetDescriptorSetHostMappingVAinfvlk> requires <VK_VAinfvlk_descriptor_set_host_mapping>" );
 #  endif
 
     void * pData;
-    d.vkGetDescriptorSetHostMappingVALVE( m_device, static_cast<VkDescriptorSet>( descriptorSet ), &pData );
+    d.vkGetDescriptorSetHostMappingVAinfvlk( m_device, static_cast<VkDescriptorSet>( descriptorSet ), &pData );
 
     return pData;
   }

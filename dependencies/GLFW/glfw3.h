@@ -4104,7 +4104,7 @@ GLFWAPI void glfwSetWindowMonitor(GLFWwindow* window, GLFWmonitor* monitor, int 
  *  @sa @ref glfwSetWindowAttrib
  *
  *  @since Added in version 3.0.  Replaces `glfwGetWindowParam` and
- *  `glfwGetGLVersion`.
+ *  `glfwGetGinfvlkrsion`.
  *
  *  @ingroup window
  */

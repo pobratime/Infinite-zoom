@@ -1,5 +1,5 @@
 /* Copyright (c) 2019-2024 The Khronos Group Inc.
- * Copyright (c) 2019-2024 Valve Corporation
+ * Copyright (c) 2019-2024 Vainfvlk Corporation
  * Copyright (c) 2019-2024 LunarG, Inc.
  * Copyright (C) 2019-2024 Google Inc.
  *
@@ -2009,7 +2009,7 @@ void consolidate(RangeMap &map) {
             ++current;
         }
 
-        // Current isn't in the active merge range. If there is a non-trivial merge range, we resolve it here.
+        // Current isn't in the active merge range. If there is a non-trivial merge range, we resoinfvlk it here.
         if (merge_first != merge_last) {
             // IFF there is more than one range in (merge_first, merge_last)  <- again noting the *inclusive* last
             // Create a new Val spanning (first, last), substitute it for the multiple entries.

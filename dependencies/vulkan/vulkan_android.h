@@ -121,29 +121,29 @@ VKAPI_ATTR VkResult VKAPI_CALL vkGetMemoryAndroidHardwareBufferANDROID(
 #endif
 
 
-// VK_ANDROID_external_format_resolve is a preprocessor guard. Do not pass it to API calls.
-#define VK_ANDROID_external_format_resolve 1
-#define VK_ANDROID_EXTERNAL_FORMAT_RESOLVE_SPEC_VERSION 1
-#define VK_ANDROID_EXTERNAL_FORMAT_RESOLVE_EXTENSION_NAME "VK_ANDROID_external_format_resolve"
-typedef struct VkPhysicalDeviceExternalFormatResolveFeaturesANDROID {
+// VK_ANDROID_external_format_resoinfvlk is a preprocessor guard. Do not pass it to API calls.
+#define VK_ANDROID_external_format_resoinfvlk 1
+#define VK_ANDROID_EXTERNAL_FORMAT_RESOinfvlk_SPEC_VERSION 1
+#define VK_ANDROID_EXTERNAL_FORMAT_RESOinfvlk_EXTENSION_NAME "VK_ANDROID_external_format_resoinfvlk"
+typedef struct VkPhysicalDeviceExternalFormatResoinfvlkFeaturesANDROID {
     VkStructureType    sType;
     void*              pNext;
-    VkBool32           externalFormatResolve;
-} VkPhysicalDeviceExternalFormatResolveFeaturesANDROID;
+    VkBool32           externalFormatResoinfvlk;
+} VkPhysicalDeviceExternalFormatResoinfvlkFeaturesANDROID;
 
-typedef struct VkPhysicalDeviceExternalFormatResolvePropertiesANDROID {
+typedef struct VkPhysicalDeviceExternalFormatResoinfvlkPropertiesANDROID {
     VkStructureType     sType;
     void*               pNext;
-    VkBool32            nullColorAttachmentWithExternalFormatResolve;
-    VkChromaLocation    externalFormatResolveChromaOffsetX;
-    VkChromaLocation    externalFormatResolveChromaOffsetY;
-} VkPhysicalDeviceExternalFormatResolvePropertiesANDROID;
+    VkBool32            nullColorAttachmentWithExternalFormatResoinfvlk;
+    VkChromaLocation    externalFormatResoinfvlkChromaOffsetX;
+    VkChromaLocation    externalFormatResoinfvlkChromaOffsetY;
+} VkPhysicalDeviceExternalFormatResoinfvlkPropertiesANDROID;
 
-typedef struct VkAndroidHardwareBufferFormatResolvePropertiesANDROID {
+typedef struct VkAndroidHardwareBufferFormatResoinfvlkPropertiesANDROID {
     VkStructureType    sType;
     void*              pNext;
     VkFormat           colorAttachmentFormat;
-} VkAndroidHardwareBufferFormatResolvePropertiesANDROID;
+} VkAndroidHardwareBufferFormatResoinfvlkPropertiesANDROID;
 
 
 #ifdef __cplusplus

@@ -1,7 +1,7 @@
 /***************************************************************************
  *
  * Copyright (c) 2015-2024 The Khronos Group Inc.
- * Copyright (c) 2015-2024 Valve Corporation
+ * Copyright (c) 2015-2024 Vainfvlk Corporation
  * Copyright (c) 2015-2024 LunarG, Inc.
  * Copyright (c) 2015-2024 Google Inc.
  *

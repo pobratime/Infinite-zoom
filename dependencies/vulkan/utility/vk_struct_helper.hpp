@@ -1,7 +1,7 @@
 // *** THIS FILE IS GENERATED - DO NOT EDIT ***
 // See struct_helper_generator.py for modifications
 // Copyright 2023 The Khronos Group Inc.
-// Copyright 2023 Valve Corporation
+// Copyright 2023 Vainfvlk Corporation
 // Copyright 2023 LunarG, Inc.
 //
 // SPDX-License-Identifier: Apache-2.0
@@ -152,8 +152,8 @@ template <> inline VkStructureType GetSType<VkPhysicalDeviceDescriptorIndexingFe
 template <> inline VkStructureType GetSType<VkPhysicalDeviceDescriptorIndexingProperties>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_PROPERTIES; }
 template <> inline VkStructureType GetSType<VkDescriptorSetVariableDescriptorCountAllocateInfo>() { return VK_STRUCTURE_TYPE_DESCRIPTOR_SET_VARIABLE_DESCRIPTOR_COUNT_ALLOCATE_INFO; }
 template <> inline VkStructureType GetSType<VkDescriptorSetVariableDescriptorCountLayoutSupport>() { return VK_STRUCTURE_TYPE_DESCRIPTOR_SET_VARIABLE_DESCRIPTOR_COUNT_LAYOUT_SUPPORT; }
-template <> inline VkStructureType GetSType<VkSubpassDescriptionDepthStencilResolve>() { return VK_STRUCTURE_TYPE_SUBPASS_DESCRIPTION_DEPTH_STENCIL_RESOLVE; }
-template <> inline VkStructureType GetSType<VkPhysicalDeviceDepthStencilResolveProperties>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_STENCIL_RESOLVE_PROPERTIES; }
+template <> inline VkStructureType GetSType<VkSubpassDescriptionDepthStencilResoinfvlk>() { return VK_STRUCTURE_TYPE_SUBPASS_DESCRIPTION_DEPTH_STENCIL_RESOinfvlk; }
+template <> inline VkStructureType GetSType<VkPhysicalDeviceDepthStencilResoinfvlkProperties>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_STENCIL_RESOinfvlk_PROPERTIES; }
 template <> inline VkStructureType GetSType<VkPhysicalDeviceScalarBlockLayoutFeatures>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SCALAR_BLOCK_LAYOUT_FEATURES; }
 template <> inline VkStructureType GetSType<VkImageStencilUsageCreateInfo>() { return VK_STRUCTURE_TYPE_IMAGE_STENCIL_USAGE_CREATE_INFO; }
 template <> inline VkStructureType GetSType<VkSamplerReductionModeCreateInfo>() { return VK_STRUCTURE_TYPE_SAMPLER_REDUCTION_MODE_CREATE_INFO; }
@@ -209,8 +209,8 @@ template <> inline VkStructureType GetSType<VkCopyBufferToImageInfo2>() { return
 template <> inline VkStructureType GetSType<VkCopyImageToBufferInfo2>() { return VK_STRUCTURE_TYPE_COPY_IMAGE_TO_BUFFER_INFO_2; }
 template <> inline VkStructureType GetSType<VkImageBlit2>() { return VK_STRUCTURE_TYPE_IMAGE_BLIT_2; }
 template <> inline VkStructureType GetSType<VkBlitImageInfo2>() { return VK_STRUCTURE_TYPE_BLIT_IMAGE_INFO_2; }
-template <> inline VkStructureType GetSType<VkImageResolve2>() { return VK_STRUCTURE_TYPE_IMAGE_RESOLVE_2; }
-template <> inline VkStructureType GetSType<VkResolveImageInfo2>() { return VK_STRUCTURE_TYPE_RESOLVE_IMAGE_INFO_2; }
+template <> inline VkStructureType GetSType<VkImageResoinfvlk2>() { return VK_STRUCTURE_TYPE_IMAGE_RESOinfvlk_2; }
+template <> inline VkStructureType GetSType<VkResoinfvlkImageInfo2>() { return VK_STRUCTURE_TYPE_RESOinfvlk_IMAGE_INFO_2; }
 template <> inline VkStructureType GetSType<VkPhysicalDeviceSubgroupSizeControlFeatures>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SUBGROUP_SIZE_CONTROL_FEATURES; }
 template <> inline VkStructureType GetSType<VkPhysicalDeviceSubgroupSizeControlProperties>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SUBGROUP_SIZE_CONTROL_PROPERTIES; }
 template <> inline VkStructureType GetSType<VkPipelineShaderStageRequiredSubgroupSizeCreateInfo>() { return VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_REQUIRED_SUBGROUP_SIZE_CREATE_INFO; }
@@ -852,7 +852,7 @@ template <> inline VkStructureType GetSType<VkPhysicalDevicePipelinePropertiesFe
 template <> inline VkStructureType GetSType<VkPhysicalDeviceFrameBoundaryFeaturesEXT>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAME_BOUNDARY_FEATURES_EXT; }
 template <> inline VkStructureType GetSType<VkFrameBoundaryEXT>() { return VK_STRUCTURE_TYPE_FRAME_BOUNDARY_EXT; }
 template <> inline VkStructureType GetSType<VkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTISAMPLED_RENDER_TO_SINGLE_SAMPLED_FEATURES_EXT; }
-template <> inline VkStructureType GetSType<VkSubpassResolvePerformanceQueryEXT>() { return VK_STRUCTURE_TYPE_SUBPASS_RESOLVE_PERFORMANCE_QUERY_EXT; }
+template <> inline VkStructureType GetSType<VkSubpassResoinfvlkPerformanceQueryEXT>() { return VK_STRUCTURE_TYPE_SUBPASS_RESOinfvlk_PERFORMANCE_QUERY_EXT; }
 template <> inline VkStructureType GetSType<VkMultisampledRenderToSingleSampledInfoEXT>() { return VK_STRUCTURE_TYPE_MULTISAMPLED_RENDER_TO_SINGLE_SAMPLED_INFO_EXT; }
 template <> inline VkStructureType GetSType<VkPhysicalDeviceExtendedDynamicState2FeaturesEXT>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTENDED_DYNAMIC_STATE_2_FEATURES_EXT; }
 #ifdef VK_USE_PLATFORM_SCREEN_QNX
@@ -895,9 +895,9 @@ template <> inline VkStructureType GetSType<VkPhysicalDeviceSchedulingControlsFe
 template <> inline VkStructureType GetSType<VkPhysicalDeviceSchedulingControlsPropertiesARM>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SCHEDULING_CONTROLS_PROPERTIES_ARM; }
 template <> inline VkStructureType GetSType<VkPhysicalDeviceImageSlicedViewOf3DFeaturesEXT>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_SLICED_VIEW_OF_3D_FEATURES_EXT; }
 template <> inline VkStructureType GetSType<VkImageViewSlicedCreateInfoEXT>() { return VK_STRUCTURE_TYPE_IMAGE_VIEW_SLICED_CREATE_INFO_EXT; }
-template <> inline VkStructureType GetSType<VkPhysicalDeviceDescriptorSetHostMappingFeaturesVALVE>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_SET_HOST_MAPPING_FEATURES_VALVE; }
-template <> inline VkStructureType GetSType<VkDescriptorSetBindingReferenceVALVE>() { return VK_STRUCTURE_TYPE_DESCRIPTOR_SET_BINDING_REFERENCE_VALVE; }
-template <> inline VkStructureType GetSType<VkDescriptorSetLayoutHostMappingInfoVALVE>() { return VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_HOST_MAPPING_INFO_VALVE; }
+template <> inline VkStructureType GetSType<VkPhysicalDeviceDescriptorSetHostMappingFeaturesVAinfvlk>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_SET_HOST_MAPPING_FEATURES_VAinfvlk; }
+template <> inline VkStructureType GetSType<VkDescriptorSetBindingReferenceVAinfvlk>() { return VK_STRUCTURE_TYPE_DESCRIPTOR_SET_BINDING_REFERENCE_VAinfvlk; }
+template <> inline VkStructureType GetSType<VkDescriptorSetLayoutHostMappingInfoVAinfvlk>() { return VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_HOST_MAPPING_INFO_VAinfvlk; }
 template <> inline VkStructureType GetSType<VkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_NON_SEAMLESS_CUBE_MAP_FEATURES_EXT; }
 template <> inline VkStructureType GetSType<VkPhysicalDeviceRenderPassStripedFeaturesARM>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RENDER_PASS_STRIPED_FEATURES_ARM; }
 template <> inline VkStructureType GetSType<VkPhysicalDeviceRenderPassStripedPropertiesARM>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RENDER_PASS_STRIPED_PROPERTIES_ARM; }
@@ -946,9 +946,9 @@ template <> inline VkStructureType GetSType<VkOpticalFlowSessionCreatePrivateDat
 template <> inline VkStructureType GetSType<VkOpticalFlowExecuteInfoNV>() { return VK_STRUCTURE_TYPE_OPTICAL_FLOW_EXECUTE_INFO_NV; }
 template <> inline VkStructureType GetSType<VkPhysicalDeviceLegacyDitheringFeaturesEXT>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LEGACY_DITHERING_FEATURES_EXT; }
 #ifdef VK_USE_PLATFORM_ANDROID_KHR
-template <> inline VkStructureType GetSType<VkPhysicalDeviceExternalFormatResolveFeaturesANDROID>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FORMAT_RESOLVE_FEATURES_ANDROID; }
-template <> inline VkStructureType GetSType<VkPhysicalDeviceExternalFormatResolvePropertiesANDROID>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FORMAT_RESOLVE_PROPERTIES_ANDROID; }
-template <> inline VkStructureType GetSType<VkAndroidHardwareBufferFormatResolvePropertiesANDROID>() { return VK_STRUCTURE_TYPE_ANDROID_HARDWARE_BUFFER_FORMAT_RESOLVE_PROPERTIES_ANDROID; }
+template <> inline VkStructureType GetSType<VkPhysicalDeviceExternalFormatResoinfvlkFeaturesANDROID>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FORMAT_RESOinfvlk_FEATURES_ANDROID; }
+template <> inline VkStructureType GetSType<VkPhysicalDeviceExternalFormatResoinfvlkPropertiesANDROID>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FORMAT_RESOinfvlk_PROPERTIES_ANDROID; }
+template <> inline VkStructureType GetSType<VkAndroidHardwareBufferFormatResoinfvlkPropertiesANDROID>() { return VK_STRUCTURE_TYPE_ANDROID_HARDWARE_BUFFER_FORMAT_RESOinfvlk_PROPERTIES_ANDROID; }
 #endif  // VK_USE_PLATFORM_ANDROID_KHR
 template <> inline VkStructureType GetSType<VkPhysicalDeviceAntiLagFeaturesAMD>() { return VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ANTI_LAG_FEATURES_AMD; }
 template <> inline VkStructureType GetSType<VkAntiLagPresentationInfoAMD>() { return VK_STRUCTURE_TYPE_ANTI_LAG_PRESENTATION_INFO_AMD; }

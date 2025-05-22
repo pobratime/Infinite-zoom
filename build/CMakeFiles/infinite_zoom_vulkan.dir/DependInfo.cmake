@@ -8,6 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_app.cpp" "CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.o" "gcc" "CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.o.d"
+  "/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_vulkan.cpp" "CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.o" "gcc" "CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.o.d"
+  "/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_window.cpp" "CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.o" "gcc" "CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.o.d"
   "/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/main.cpp" "CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o" "gcc" "CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o.d"
   )
 

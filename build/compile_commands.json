@@ -1,7 +1,25 @@
 [
 {
   "directory": "/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build",
-  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/dependencies -isystem /opt/homebrew/include -isystem /usr/local/include -g -arch arm64 -o CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o -c /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/main.cpp",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src -I/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/dependencies -isystem /opt/homebrew/include -isystem /usr/local/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.o -c /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_app.cpp",
+  "file": "/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_app.cpp",
+  "output": "CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.o"
+},
+{
+  "directory": "/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src -I/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/dependencies -isystem /opt/homebrew/include -isystem /usr/local/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.o -c /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_vulkan.cpp",
+  "file": "/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_vulkan.cpp",
+  "output": "CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.o"
+},
+{
+  "directory": "/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src -I/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/dependencies -isystem /opt/homebrew/include -isystem /usr/local/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.o -c /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_window.cpp",
+  "file": "/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_window.cpp",
+  "output": "CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.o"
+},
+{
+  "directory": "/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src -I/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/dependencies -isystem /opt/homebrew/include -isystem /usr/local/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o -c /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/main.cpp",
   "file": "/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/main.cpp",
   "output": "CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o"
 }

@@ -72,10 +72,52 @@ include CMakeFiles/infinite_zoom_vulkan.dir/flags.make
 CMakeFiles/infinite_zoom_vulkan.dir/codegen:
 .PHONY : CMakeFiles/infinite_zoom_vulkan.dir/codegen
 
+CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.o: CMakeFiles/infinite_zoom_vulkan.dir/flags.make
+CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.o: /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_app.cpp
+CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.o: CMakeFiles/infinite_zoom_vulkan.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.o"
+	/opt/homebrew/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.o -MF CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.o.d -o CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.o -c /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_app.cpp
+
+CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.i"
+	/opt/homebrew/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_app.cpp > CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.i
+
+CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.s"
+	/opt/homebrew/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_app.cpp -o CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.s
+
+CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.o: CMakeFiles/infinite_zoom_vulkan.dir/flags.make
+CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.o: /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_vulkan.cpp
+CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.o: CMakeFiles/infinite_zoom_vulkan.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.o"
+	/opt/homebrew/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.o -MF CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.o.d -o CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.o -c /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_vulkan.cpp
+
+CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.i"
+	/opt/homebrew/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_vulkan.cpp > CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.i
+
+CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.s"
+	/opt/homebrew/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_vulkan.cpp -o CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.s
+
+CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.o: CMakeFiles/infinite_zoom_vulkan.dir/flags.make
+CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.o: /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_window.cpp
+CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.o: CMakeFiles/infinite_zoom_vulkan.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.o"
+	/opt/homebrew/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.o -MF CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.o.d -o CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.o -c /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_window.cpp
+
+CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.i"
+	/opt/homebrew/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_window.cpp > CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.i
+
+CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.s"
+	/opt/homebrew/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_window.cpp -o CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.s
+
 CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o: CMakeFiles/infinite_zoom_vulkan.dir/flags.make
 CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o: /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/main.cpp
 CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o: CMakeFiles/infinite_zoom_vulkan.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o"
 	/opt/homebrew/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o -MF CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o.d -o CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o -c /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/main.cpp
 
 CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.i: cmake_force
@@ -88,17 +130,23 @@ CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.s: cmake_force
 
 # Object files for target infinite_zoom_vulkan
 infinite_zoom_vulkan_OBJECTS = \
+"CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.o" \
+"CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.o" \
+"CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.o" \
 "CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o"
 
 # External object files for target infinite_zoom_vulkan
 infinite_zoom_vulkan_EXTERNAL_OBJECTS =
 
+infinite_zoom_vulkan: CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.o
+infinite_zoom_vulkan: CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.o
+infinite_zoom_vulkan: CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.o
 infinite_zoom_vulkan: CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o
 infinite_zoom_vulkan: CMakeFiles/infinite_zoom_vulkan.dir/build.make
 infinite_zoom_vulkan: /opt/homebrew/lib/libglfw.3.4.dylib
 infinite_zoom_vulkan: /usr/local/lib/libvulkan.dylib
 infinite_zoom_vulkan: CMakeFiles/infinite_zoom_vulkan.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable infinite_zoom_vulkan"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable infinite_zoom_vulkan"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/infinite_zoom_vulkan.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -85,12 +85,12 @@ clean: CMakeFiles/infinite_zoom_vulkan.dir/clean
 CMakeFiles/infinite_zoom_vulkan.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/infinite_zoom_vulkan.dir/build.make CMakeFiles/infinite_zoom_vulkan.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/infinite_zoom_vulkan.dir/build.make CMakeFiles/infinite_zoom_vulkan.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build/CMakeFiles --progress-num=1,2 "Built target infinite_zoom_vulkan"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target infinite_zoom_vulkan"
 .PHONY : CMakeFiles/infinite_zoom_vulkan.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/infinite_zoom_vulkan.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/infinite_zoom_vulkan.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build/CMakeFiles 0
 .PHONY : CMakeFiles/infinite_zoom_vulkan.dir/rule
@@ -102,7 +102,7 @@ infinite_zoom_vulkan: CMakeFiles/infinite_zoom_vulkan.dir/rule
 # codegen rule for target.
 CMakeFiles/infinite_zoom_vulkan.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/infinite_zoom_vulkan.dir/build.make CMakeFiles/infinite_zoom_vulkan.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build/CMakeFiles --progress-num=1,2 "Finished codegen for target infinite_zoom_vulkan"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target infinite_zoom_vulkan"
 .PHONY : CMakeFiles/infinite_zoom_vulkan.dir/codegen
 
 # clean rule for target.

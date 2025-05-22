@@ -1,28 +1,17 @@
-#include <GLFW/glfw3.h>
-#include <vulkan/vulkan.h>
+#include "infz_app.hpp"
+#include <cstdlib>
 #include <iostream>
+#include <exception>
+#include <stdexcept>
 
 int main() {
-    if (!glfwInit()) {
-        std::cerr << "Failed to initialize GLFW\n";
-        return -1;
-    }
+  try {
+    infz::App app;
+    app.run();
+  } catch (const std::exception &e) {
+    std::cerr << "error: " << e.what() << std::endl;
+    return EXIT_FAILURE;
+  }
 
-    glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);  // No OpenGL context!
-
-    GLFWwindow* window = glfwCreateWindow(800, 600, "Simple Vulkan Window on macOS", nullptr, nullptr);
-    if (!window) {
-        std::cerr << "Failed to create GLFW window\n";
-        glfwTerminate();
-        return -1;
-    }
-
-    while (!glfwWindowShouldClose(window)) {
-        glfwPollEvents();
-    }
-
-    glfwDestroyWindow(window);
-    glfwTerminate();
-
-    return 0;
+  return EXIT_SUCCESS;
 }

@@ -212,7 +212,7 @@ namespace VULKAN_HPP_NAMESPACE
       "VK_KHR_maintenance3",
       "VK_KHR_draw_indirect_count",
       "VK_EXT_filter_cubic",
-      "VK_QCOM_render_pass_shader_resolve",
+      "VK_QCOM_render_pass_shader_resoinfvlk",
       "VK_EXT_global_priority",
       "VK_KHR_shader_subgroup_extended_types",
       "VK_KHR_8bit_storage",
@@ -234,7 +234,7 @@ namespace VULKAN_HPP_NAMESPACE
       "VK_KHR_driver_properties",
       "VK_KHR_shader_float_controls",
       "VK_NV_shader_subgroup_partitioned",
-      "VK_KHR_depth_stencil_resolve",
+      "VK_KHR_depth_stencil_resoinfvlk",
       "VK_KHR_swapchain_mutable_format",
       "VK_NV_compute_shader_derivatives",
       "VK_NV_mesh_shader",
@@ -344,7 +344,7 @@ namespace VULKAN_HPP_NAMESPACE
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
       "VK_NV_acquire_winrt_display",
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
-      "VK_VALVE_mutable_descriptor_type",
+      "VK_VAinfvlk_mutable_descriptor_type",
       "VK_EXT_vertex_input_dynamic_state",
       "VK_EXT_physical_device_drm",
       "VK_EXT_device_address_binding_report",
@@ -385,7 +385,7 @@ namespace VULKAN_HPP_NAMESPACE
       "VK_KHR_shader_subgroup_rotate",
       "VK_ARM_scheduling_controls",
       "VK_EXT_image_sliced_view_of_3d",
-      "VK_VALVE_descriptor_set_host_mapping",
+      "VK_VAinfvlk_descriptor_set_host_mapping",
       "VK_EXT_depth_clamp_zero_one",
       "VK_EXT_non_seamless_cube_map",
       "VK_ARM_render_pass_striped",
@@ -408,7 +408,7 @@ namespace VULKAN_HPP_NAMESPACE
       "VK_EXT_legacy_dithering",
       "VK_EXT_pipeline_protected_access",
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
-      "VK_ANDROID_external_format_resolve",
+      "VK_ANDROID_external_format_resoinfvlk",
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
       "VK_KHR_maintenance5",
       "VK_AMD_anti_lag",
@@ -666,12 +666,12 @@ namespace VULKAN_HPP_NAMESPACE
       { "VK_KHR_dynamic_rendering",
         { { "VK_VERSION_1_0",
             { {
-              "VK_KHR_depth_stencil_resolve",
+              "VK_KHR_depth_stencil_resoinfvlk",
               "VK_KHR_get_physical_device_properties2",
             } } },
           { "VK_VERSION_1_1",
             { {
-              "VK_KHR_depth_stencil_resolve",
+              "VK_KHR_depth_stencil_resoinfvlk",
             } } },
           { "VK_VERSION_1_2", { {} } } } },
 #if defined( VK_USE_PLATFORM_GGP )
@@ -1235,7 +1235,7 @@ namespace VULKAN_HPP_NAMESPACE
             } } },
           { "VK_VERSION_1_1", { {} } } } },
       { "VK_NV_shader_subgroup_partitioned", { { "VK_VERSION_1_1", { {} } } } },
-      { "VK_KHR_depth_stencil_resolve",
+      { "VK_KHR_depth_stencil_resoinfvlk",
         { { "VK_VERSION_1_0",
             { {
               "VK_KHR_create_renderpass2",
@@ -1875,7 +1875,7 @@ namespace VULKAN_HPP_NAMESPACE
               "VK_KHR_surface",
             } } } } },
 #endif /*VK_USE_PLATFORM_DIRECTFB_EXT*/
-      { "VK_VALVE_mutable_descriptor_type",
+      { "VK_VAinfvlk_mutable_descriptor_type",
         { { "VK_VERSION_1_0",
             { {
               "VK_KHR_maintenance3",
@@ -1987,7 +1987,7 @@ namespace VULKAN_HPP_NAMESPACE
         { { "VK_VERSION_1_0",
             { {
               "VK_KHR_create_renderpass2",
-              "VK_KHR_depth_stencil_resolve",
+              "VK_KHR_depth_stencil_resoinfvlk",
             } } },
           { "VK_VERSION_1_2", { {} } } } },
       { "VK_EXT_extended_dynamic_state2",
@@ -2096,7 +2096,7 @@ namespace VULKAN_HPP_NAMESPACE
               "VK_KHR_maintenance1",
             } } },
           { "VK_VERSION_1_1", { {} } } } },
-      { "VK_VALVE_descriptor_set_host_mapping",
+      { "VK_VAinfvlk_descriptor_set_host_mapping",
         { { "VK_VERSION_1_0",
             { {
               "VK_KHR_get_physical_device_properties2",
@@ -2257,7 +2257,7 @@ namespace VULKAN_HPP_NAMESPACE
             } } },
           { "VK_VERSION_1_1", { {} } } } },
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
-      { "VK_ANDROID_external_format_resolve",
+      { "VK_ANDROID_external_format_resoinfvlk",
         { { "VK_VERSION_1_0",
             { {
               "VK_ANDROID_external_memory_android_hardware_buffer",
@@ -2697,7 +2697,7 @@ namespace VULKAN_HPP_NAMESPACE
       { "VK_EXT_pipeline_creation_feedback", "VK_VERSION_1_3" },
       { "VK_KHR_driver_properties", "VK_VERSION_1_2" },
       { "VK_KHR_shader_float_controls", "VK_VERSION_1_2" },
-      { "VK_KHR_depth_stencil_resolve", "VK_VERSION_1_2" },
+      { "VK_KHR_depth_stencil_resoinfvlk", "VK_VERSION_1_2" },
       { "VK_NV_compute_shader_derivatives", "VK_KHR_compute_shader_derivatives" },
       { "VK_NV_fragment_shader_barycentric", "VK_KHR_fragment_shader_barycentric" },
       { "VK_KHR_timeline_semaphore", "VK_VERSION_1_2" },
@@ -2731,7 +2731,7 @@ namespace VULKAN_HPP_NAMESPACE
       { "VK_KHR_copy_commands2", "VK_VERSION_1_3" },
       { "VK_EXT_4444_formats", "VK_VERSION_1_3" },
       { "VK_ARM_rasterization_order_attachment_access", "VK_EXT_rasterization_order_attachment_access" },
-      { "VK_VALVE_mutable_descriptor_type", "VK_EXT_mutable_descriptor_type" },
+      { "VK_VAinfvlk_mutable_descriptor_type", "VK_EXT_mutable_descriptor_type" },
       { "VK_KHR_format_feature_flags2", "VK_VERSION_1_3" },
       { "VK_EXT_extended_dynamic_state2", "VK_VERSION_1_3" },
       { "VK_EXT_global_priority_query", "VK_KHR_global_priority" },
@@ -3052,7 +3052,7 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return "VK_VERSION_1_2";
     }
-    if ( extension == "VK_KHR_depth_stencil_resolve" )
+    if ( extension == "VK_KHR_depth_stencil_resoinfvlk" )
     {
       return "VK_VERSION_1_2";
     }
@@ -3188,7 +3188,7 @@ namespace VULKAN_HPP_NAMESPACE
     {
       return "VK_EXT_rasterization_order_attachment_access";
     }
-    if ( extension == "VK_VALVE_mutable_descriptor_type" )
+    if ( extension == "VK_VAinfvlk_mutable_descriptor_type" )
     {
       return "VK_EXT_mutable_descriptor_type";
     }
@@ -3357,7 +3357,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
         || ( extension == "VK_NV_shading_rate_image" ) || ( extension == "VK_NV_ray_tracing" ) || ( extension == "VK_NV_representative_fragment_test" ) ||
            ( extension == "VK_KHR_maintenance3" ) || ( extension == "VK_KHR_draw_indirect_count" ) || ( extension == "VK_EXT_filter_cubic" ) ||
-           ( extension == "VK_QCOM_render_pass_shader_resolve" ) || ( extension == "VK_EXT_global_priority" ) ||
+           ( extension == "VK_QCOM_render_pass_shader_resoinfvlk" ) || ( extension == "VK_EXT_global_priority" ) ||
            ( extension == "VK_KHR_shader_subgroup_extended_types" ) || ( extension == "VK_KHR_8bit_storage" ) ||
            ( extension == "VK_EXT_external_memory_host" ) || ( extension == "VK_AMD_buffer_marker" ) || ( extension == "VK_KHR_shader_atomic_int64" ) ||
            ( extension == "VK_KHR_shader_clock" ) || ( extension == "VK_AMD_pipeline_compiler_control" ) || ( extension == "VK_EXT_calibrated_timestamps" ) ||
@@ -3368,7 +3368,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_GGP*/
         || ( extension == "VK_EXT_pipeline_creation_feedback" ) || ( extension == "VK_KHR_driver_properties" ) ||
            ( extension == "VK_KHR_shader_float_controls" ) || ( extension == "VK_NV_shader_subgroup_partitioned" ) ||
-           ( extension == "VK_KHR_depth_stencil_resolve" ) || ( extension == "VK_KHR_swapchain_mutable_format" ) ||
+           ( extension == "VK_KHR_depth_stencil_resoinfvlk" ) || ( extension == "VK_KHR_swapchain_mutable_format" ) ||
            ( extension == "VK_NV_compute_shader_derivatives" ) || ( extension == "VK_NV_mesh_shader" ) ||
            ( extension == "VK_NV_fragment_shader_barycentric" ) || ( extension == "VK_NV_shader_image_footprint" ) ||
            ( extension == "VK_NV_scissor_exclusive" ) || ( extension == "VK_NV_device_diagnostic_checkpoints" ) ||
@@ -3424,7 +3424,7 @@ namespace VULKAN_HPP_NAMESPACE
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
         || ( extension == "VK_NV_acquire_winrt_display" )
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
-        || ( extension == "VK_VALVE_mutable_descriptor_type" ) || ( extension == "VK_EXT_vertex_input_dynamic_state" ) ||
+        || ( extension == "VK_VAinfvlk_mutable_descriptor_type" ) || ( extension == "VK_EXT_vertex_input_dynamic_state" ) ||
            ( extension == "VK_EXT_physical_device_drm" ) || ( extension == "VK_EXT_device_address_binding_report" ) ||
            ( extension == "VK_EXT_depth_clip_control" ) || ( extension == "VK_EXT_primitive_topology_list_restart" ) ||
            ( extension == "VK_KHR_format_feature_flags2" ) || ( extension == "VK_EXT_present_mode_fifo_latest_ready" )
@@ -3445,7 +3445,7 @@ namespace VULKAN_HPP_NAMESPACE
            ( extension == "VK_EXT_border_color_swizzle" ) || ( extension == "VK_EXT_pageable_device_local_memory" ) || ( extension == "VK_KHR_maintenance4" ) ||
            ( extension == "VK_ARM_shader_core_properties" ) || ( extension == "VK_KHR_shader_subgroup_rotate" ) ||
            ( extension == "VK_ARM_scheduling_controls" ) || ( extension == "VK_EXT_image_sliced_view_of_3d" ) ||
-           ( extension == "VK_VALVE_descriptor_set_host_mapping" ) || ( extension == "VK_EXT_depth_clamp_zero_one" ) ||
+           ( extension == "VK_VAinfvlk_descriptor_set_host_mapping" ) || ( extension == "VK_EXT_depth_clamp_zero_one" ) ||
            ( extension == "VK_EXT_non_seamless_cube_map" ) || ( extension == "VK_ARM_render_pass_striped" ) ||
            ( extension == "VK_QCOM_fragment_density_map_offset" ) || ( extension == "VK_NV_copy_memory_indirect" ) ||
            ( extension == "VK_NV_memory_decompression" ) || ( extension == "VK_NV_device_generated_commands_compute" ) ||
@@ -3457,7 +3457,7 @@ namespace VULKAN_HPP_NAMESPACE
            ( extension == "VK_EXT_rasterization_order_attachment_access" ) || ( extension == "VK_NV_optical_flow" ) ||
            ( extension == "VK_EXT_legacy_dithering" ) || ( extension == "VK_EXT_pipeline_protected_access" )
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
-        || ( extension == "VK_ANDROID_external_format_resolve" )
+        || ( extension == "VK_ANDROID_external_format_resoinfvlk" )
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
         || ( extension == "VK_KHR_maintenance5" ) || ( extension == "VK_AMD_anti_lag" ) || ( extension == "VK_KHR_ray_tracing_position_fetch" ) ||
            ( extension == "VK_EXT_shader_object" ) || ( extension == "VK_KHR_pipeline_binary" ) || ( extension == "VK_QCOM_tile_properties" ) ||
@@ -3587,7 +3587,7 @@ namespace VULKAN_HPP_NAMESPACE
            ( extension == "VK_EXT_global_priority" ) || ( extension == "VK_KHR_shader_subgroup_extended_types" ) || ( extension == "VK_KHR_8bit_storage" ) ||
            ( extension == "VK_KHR_shader_atomic_int64" ) || ( extension == "VK_EXT_calibrated_timestamps" ) || ( extension == "VK_KHR_global_priority" ) ||
            ( extension == "VK_EXT_vertex_attribute_divisor" ) || ( extension == "VK_EXT_pipeline_creation_feedback" ) ||
-           ( extension == "VK_KHR_driver_properties" ) || ( extension == "VK_KHR_shader_float_controls" ) || ( extension == "VK_KHR_depth_stencil_resolve" ) ||
+           ( extension == "VK_KHR_driver_properties" ) || ( extension == "VK_KHR_shader_float_controls" ) || ( extension == "VK_KHR_depth_stencil_resoinfvlk" ) ||
            ( extension == "VK_NV_compute_shader_derivatives" ) || ( extension == "VK_NV_fragment_shader_barycentric" ) ||
            ( extension == "VK_KHR_timeline_semaphore" ) || ( extension == "VK_KHR_vulkan_memory_model" ) ||
            ( extension == "VK_KHR_shader_terminate_invocation" ) || ( extension == "VK_EXT_scalar_block_layout" ) ||
@@ -3602,7 +3602,7 @@ namespace VULKAN_HPP_NAMESPACE
            ( extension == "VK_EXT_pipeline_creation_cache_control" ) || ( extension == "VK_KHR_synchronization2" ) ||
            ( extension == "VK_KHR_zero_initialize_workgroup_memory" ) || ( extension == "VK_EXT_ycbcr_2plane_444_formats" ) ||
            ( extension == "VK_EXT_image_robustness" ) || ( extension == "VK_KHR_copy_commands2" ) || ( extension == "VK_EXT_4444_formats" ) ||
-           ( extension == "VK_ARM_rasterization_order_attachment_access" ) || ( extension == "VK_VALVE_mutable_descriptor_type" ) ||
+           ( extension == "VK_ARM_rasterization_order_attachment_access" ) || ( extension == "VK_VAinfvlk_mutable_descriptor_type" ) ||
            ( extension == "VK_KHR_format_feature_flags2" ) || ( extension == "VK_EXT_extended_dynamic_state2" ) ||
            ( extension == "VK_EXT_global_priority_query" ) || ( extension == "VK_EXT_load_store_op_none" ) || ( extension == "VK_KHR_maintenance4" ) ||
            ( extension == "VK_KHR_shader_subgroup_rotate" ) || ( extension == "VK_EXT_depth_clamp_zero_one" ) ||

@@ -126,7 +126,7 @@ namespace VULKAN_HPP_NAMESPACE
   union ClearValue;
   struct ImageBlit;
   struct ImageCopy;
-  struct ImageResolve;
+  struct ImageResoinfvlk;
   struct ImageSubresourceLayers;
   struct RenderPassBeginInfo;
 
@@ -309,10 +309,10 @@ namespace VULKAN_HPP_NAMESPACE
   using DescriptorSetVariableDescriptorCountAllocateInfoEXT = DescriptorSetVariableDescriptorCountAllocateInfo;
   struct DescriptorSetVariableDescriptorCountLayoutSupport;
   using DescriptorSetVariableDescriptorCountLayoutSupportEXT = DescriptorSetVariableDescriptorCountLayoutSupport;
-  struct SubpassDescriptionDepthStencilResolve;
-  using SubpassDescriptionDepthStencilResolveKHR = SubpassDescriptionDepthStencilResolve;
-  struct PhysicalDeviceDepthStencilResolveProperties;
-  using PhysicalDeviceDepthStencilResolvePropertiesKHR = PhysicalDeviceDepthStencilResolveProperties;
+  struct SubpassDescriptionDepthStencilResoinfvlk;
+  using SubpassDescriptionDepthStencilResoinfvlkKHR = SubpassDescriptionDepthStencilResoinfvlk;
+  struct PhysicalDeviceDepthStencilResoinfvlkProperties;
+  using PhysicalDeviceDepthStencilResoinfvlkPropertiesKHR = PhysicalDeviceDepthStencilResoinfvlkProperties;
   struct PhysicalDeviceScalarBlockLayoutFeatures;
   using PhysicalDeviceScalarBlockLayoutFeaturesEXT = PhysicalDeviceScalarBlockLayoutFeatures;
   struct ImageStencilUsageCreateInfo;
@@ -418,8 +418,8 @@ namespace VULKAN_HPP_NAMESPACE
   using CopyImageToBufferInfo2KHR = CopyImageToBufferInfo2;
   struct BlitImageInfo2;
   using BlitImageInfo2KHR = BlitImageInfo2;
-  struct ResolveImageInfo2;
-  using ResolveImageInfo2KHR = ResolveImageInfo2;
+  struct ResoinfvlkImageInfo2;
+  using ResoinfvlkImageInfo2KHR = ResoinfvlkImageInfo2;
   struct BufferCopy2;
   using BufferCopy2KHR = BufferCopy2;
   struct ImageCopy2;
@@ -428,8 +428,8 @@ namespace VULKAN_HPP_NAMESPACE
   using ImageBlit2KHR = ImageBlit2;
   struct BufferImageCopy2;
   using BufferImageCopy2KHR = BufferImageCopy2;
-  struct ImageResolve2;
-  using ImageResolve2KHR = ImageResolve2;
+  struct ImageResoinfvlk2;
+  using ImageResoinfvlk2KHR = ImageResoinfvlk2;
   struct PhysicalDeviceSubgroupSizeControlFeatures;
   using PhysicalDeviceSubgroupSizeControlFeaturesEXT = PhysicalDeviceSubgroupSizeControlFeatures;
   struct PhysicalDeviceSubgroupSizeControlProperties;
@@ -1540,7 +1540,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   //=== VK_EXT_multisampled_render_to_single_sampled ===
   struct PhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT;
-  struct SubpassResolvePerformanceQueryEXT;
+  struct SubpassResoinfvlkPerformanceQueryEXT;
   struct MultisampledRenderToSingleSampledInfoEXT;
 
   //=== VK_EXT_extended_dynamic_state2 ===
@@ -1624,10 +1624,10 @@ namespace VULKAN_HPP_NAMESPACE
   struct PhysicalDeviceImageSlicedViewOf3DFeaturesEXT;
   struct ImageViewSlicedCreateInfoEXT;
 
-  //=== VK_VALVE_descriptor_set_host_mapping ===
-  struct PhysicalDeviceDescriptorSetHostMappingFeaturesVALVE;
-  struct DescriptorSetBindingReferenceVALVE;
-  struct DescriptorSetLayoutHostMappingInfoVALVE;
+  //=== VK_VAinfvlk_descriptor_set_host_mapping ===
+  struct PhysicalDeviceDescriptorSetHostMappingFeaturesVAinfvlk;
+  struct DescriptorSetBindingReferenceVAinfvlk;
+  struct DescriptorSetLayoutHostMappingInfoVAinfvlk;
 
   //=== VK_EXT_non_seamless_cube_map ===
   struct PhysicalDeviceNonSeamlessCubeMapFeaturesEXT;
@@ -1723,10 +1723,10 @@ namespace VULKAN_HPP_NAMESPACE
   struct PhysicalDeviceLegacyDitheringFeaturesEXT;
 
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
-  //=== VK_ANDROID_external_format_resolve ===
-  struct PhysicalDeviceExternalFormatResolveFeaturesANDROID;
-  struct PhysicalDeviceExternalFormatResolvePropertiesANDROID;
-  struct AndroidHardwareBufferFormatResolvePropertiesANDROID;
+  //=== VK_ANDROID_external_format_resoinfvlk ===
+  struct PhysicalDeviceExternalFormatResoinfvlkFeaturesANDROID;
+  struct PhysicalDeviceExternalFormatResoinfvlkPropertiesANDROID;
+  struct AndroidHardwareBufferFormatResoinfvlkPropertiesANDROID;
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
   //=== VK_AMD_anti_lag ===
@@ -1783,11 +1783,11 @@ namespace VULKAN_HPP_NAMESPACE
 
   //=== VK_EXT_mutable_descriptor_type ===
   struct PhysicalDeviceMutableDescriptorTypeFeaturesEXT;
-  using PhysicalDeviceMutableDescriptorTypeFeaturesVALVE = PhysicalDeviceMutableDescriptorTypeFeaturesEXT;
+  using PhysicalDeviceMutableDescriptorTypeFeaturesVAinfvlk = PhysicalDeviceMutableDescriptorTypeFeaturesEXT;
   struct MutableDescriptorTypeListEXT;
-  using MutableDescriptorTypeListVALVE = MutableDescriptorTypeListEXT;
+  using MutableDescriptorTypeListVAinfvlk = MutableDescriptorTypeListEXT;
   struct MutableDescriptorTypeCreateInfoEXT;
-  using MutableDescriptorTypeCreateInfoVALVE = MutableDescriptorTypeCreateInfoEXT;
+  using MutableDescriptorTypeCreateInfoVAinfvlk = MutableDescriptorTypeCreateInfoEXT;
 
   //=== VK_EXT_legacy_vertex_attributes ===
   struct PhysicalDeviceLegacyVertexAttributesFeaturesEXT;
@@ -5164,23 +5164,23 @@ namespace VULKAN_HPP_NAMESPACE
                            Dispatch const & d VULKAN_HPP_DEFAULT_DISPATCHER_ASSIGNMENT ) const VULKAN_HPP_NOEXCEPT;
 #endif /* VULKAN_HPP_DISABLE_ENHANCED_MODE */
 
-    // wrapper function for command vkCmdResolveImage, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResolveImage.html
+    // wrapper function for command vkCmdResoinfvlkImage, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResoinfvlkImage.html
     template <typename Dispatch = VULKAN_HPP_DEFAULT_DISPATCHER_TYPE>
-    void resolveImage( VULKAN_HPP_NAMESPACE::Image                srcImage,
+    void resoinfvlkImage( VULKAN_HPP_NAMESPACE::Image                srcImage,
                        VULKAN_HPP_NAMESPACE::ImageLayout          srcImageLayout,
                        VULKAN_HPP_NAMESPACE::Image                dstImage,
                        VULKAN_HPP_NAMESPACE::ImageLayout          dstImageLayout,
                        uint32_t                                   regionCount,
-                       const VULKAN_HPP_NAMESPACE::ImageResolve * pRegions,
+                       const VULKAN_HPP_NAMESPACE::ImageResoinfvlk * pRegions,
                        Dispatch const & d                         VULKAN_HPP_DEFAULT_DISPATCHER_ASSIGNMENT ) const VULKAN_HPP_NOEXCEPT;
 #ifndef VULKAN_HPP_DISABLE_ENHANCED_MODE
-    // wrapper function for command vkCmdResolveImage, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResolveImage.html
+    // wrapper function for command vkCmdResoinfvlkImage, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResoinfvlkImage.html
     template <typename Dispatch = VULKAN_HPP_DEFAULT_DISPATCHER_TYPE>
-    void resolveImage( VULKAN_HPP_NAMESPACE::Image                                                        srcImage,
+    void resoinfvlkImage( VULKAN_HPP_NAMESPACE::Image                                                        srcImage,
                        VULKAN_HPP_NAMESPACE::ImageLayout                                                  srcImageLayout,
                        VULKAN_HPP_NAMESPACE::Image                                                        dstImage,
                        VULKAN_HPP_NAMESPACE::ImageLayout                                                  dstImageLayout,
-                       VULKAN_HPP_NAMESPACE::ArrayProxy<const VULKAN_HPP_NAMESPACE::ImageResolve> const & regions,
+                       VULKAN_HPP_NAMESPACE::ArrayProxy<const VULKAN_HPP_NAMESPACE::ImageResoinfvlk> const & regions,
                        Dispatch const & d VULKAN_HPP_DEFAULT_DISPATCHER_ASSIGNMENT ) const VULKAN_HPP_NOEXCEPT;
 #endif /* VULKAN_HPP_DISABLE_ENHANCED_MODE */
 
@@ -5518,14 +5518,14 @@ namespace VULKAN_HPP_NAMESPACE
                      Dispatch const & d                           VULKAN_HPP_DEFAULT_DISPATCHER_ASSIGNMENT ) const VULKAN_HPP_NOEXCEPT;
 #endif /* VULKAN_HPP_DISABLE_ENHANCED_MODE */
 
-    // wrapper function for command vkCmdResolveImage2, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResolveImage2.html
+    // wrapper function for command vkCmdResoinfvlkImage2, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResoinfvlkImage2.html
     template <typename Dispatch = VULKAN_HPP_DEFAULT_DISPATCHER_TYPE>
-    void resolveImage2( const VULKAN_HPP_NAMESPACE::ResolveImageInfo2 * pResolveImageInfo,
+    void resoinfvlkImage2( const VULKAN_HPP_NAMESPACE::ResoinfvlkImageInfo2 * pResoinfvlkImageInfo,
                         Dispatch const & d                              VULKAN_HPP_DEFAULT_DISPATCHER_ASSIGNMENT ) const VULKAN_HPP_NOEXCEPT;
 #ifndef VULKAN_HPP_DISABLE_ENHANCED_MODE
-    // wrapper function for command vkCmdResolveImage2, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResolveImage2.html
+    // wrapper function for command vkCmdResoinfvlkImage2, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResoinfvlkImage2.html
     template <typename Dispatch = VULKAN_HPP_DEFAULT_DISPATCHER_TYPE>
-    void resolveImage2( const VULKAN_HPP_NAMESPACE::ResolveImageInfo2 & resolveImageInfo,
+    void resoinfvlkImage2( const VULKAN_HPP_NAMESPACE::ResoinfvlkImageInfo2 & resoinfvlkImageInfo,
                         Dispatch const & d                              VULKAN_HPP_DEFAULT_DISPATCHER_ASSIGNMENT ) const VULKAN_HPP_NOEXCEPT;
 #endif /* VULKAN_HPP_DISABLE_ENHANCED_MODE */
 
@@ -7125,14 +7125,14 @@ namespace VULKAN_HPP_NAMESPACE
                         Dispatch const & d                           VULKAN_HPP_DEFAULT_DISPATCHER_ASSIGNMENT ) const VULKAN_HPP_NOEXCEPT;
 #endif /* VULKAN_HPP_DISABLE_ENHANCED_MODE */
 
-    // wrapper function for command vkCmdResolveImage2KHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResolveImage2KHR.html
+    // wrapper function for command vkCmdResoinfvlkImage2KHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResoinfvlkImage2KHR.html
     template <typename Dispatch = VULKAN_HPP_DEFAULT_DISPATCHER_TYPE>
-    void resolveImage2KHR( const VULKAN_HPP_NAMESPACE::ResolveImageInfo2 * pResolveImageInfo,
+    void resoinfvlkImage2KHR( const VULKAN_HPP_NAMESPACE::ResoinfvlkImageInfo2 * pResoinfvlkImageInfo,
                            Dispatch const & d                              VULKAN_HPP_DEFAULT_DISPATCHER_ASSIGNMENT ) const VULKAN_HPP_NOEXCEPT;
 #ifndef VULKAN_HPP_DISABLE_ENHANCED_MODE
-    // wrapper function for command vkCmdResolveImage2KHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResolveImage2KHR.html
+    // wrapper function for command vkCmdResoinfvlkImage2KHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/vkCmdResoinfvlkImage2KHR.html
     template <typename Dispatch = VULKAN_HPP_DEFAULT_DISPATCHER_TYPE>
-    void resolveImage2KHR( const VULKAN_HPP_NAMESPACE::ResolveImageInfo2 & resolveImageInfo,
+    void resoinfvlkImage2KHR( const VULKAN_HPP_NAMESPACE::ResoinfvlkImageInfo2 & resoinfvlkImageInfo,
                            Dispatch const & d                              VULKAN_HPP_DEFAULT_DISPATCHER_ASSIGNMENT ) const VULKAN_HPP_NOEXCEPT;
 #endif /* VULKAN_HPP_DISABLE_ENHANCED_MODE */
 
@@ -16683,34 +16683,34 @@ namespace VULKAN_HPP_NAMESPACE
                                                               Dispatch const & d                                          VULKAN_HPP_DEFAULT_DISPATCHER_ASSIGNMENT ) const;
 #endif /* VULKAN_HPP_DISABLE_ENHANCED_MODE */
 
-    //=== VK_VALVE_descriptor_set_host_mapping ===
+    //=== VK_VAinfvlk_descriptor_set_host_mapping ===
 
-    // wrapper function for command vkGetDescriptorSetLayoutHostMappingInfoVALVE, see
-    // https://registry.khronos.org/vulkan/specs/latest/man/html/vkGetDescriptorSetLayoutHostMappingInfoVALVE.html
+    // wrapper function for command vkGetDescriptorSetLayoutHostMappingInfoVAinfvlk, see
+    // https://registry.khronos.org/vulkan/specs/latest/man/html/vkGetDescriptorSetLayoutHostMappingInfoVAinfvlk.html
     template <typename Dispatch = VULKAN_HPP_DEFAULT_DISPATCHER_TYPE>
-    void getDescriptorSetLayoutHostMappingInfoVALVE( const VULKAN_HPP_NAMESPACE::DescriptorSetBindingReferenceVALVE * pBindingReference,
-                                                     VULKAN_HPP_NAMESPACE::DescriptorSetLayoutHostMappingInfoVALVE *  pHostMapping,
+    void getDescriptorSetLayoutHostMappingInfoVAinfvlk( const VULKAN_HPP_NAMESPACE::DescriptorSetBindingReferenceVAinfvlk * pBindingReference,
+                                                     VULKAN_HPP_NAMESPACE::DescriptorSetLayoutHostMappingInfoVAinfvlk *  pHostMapping,
                                                      Dispatch const & d VULKAN_HPP_DEFAULT_DISPATCHER_ASSIGNMENT ) const VULKAN_HPP_NOEXCEPT;
 #ifndef VULKAN_HPP_DISABLE_ENHANCED_MODE
-    // wrapper function for command vkGetDescriptorSetLayoutHostMappingInfoVALVE, see
-    // https://registry.khronos.org/vulkan/specs/latest/man/html/vkGetDescriptorSetLayoutHostMappingInfoVALVE.html
+    // wrapper function for command vkGetDescriptorSetLayoutHostMappingInfoVAinfvlk, see
+    // https://registry.khronos.org/vulkan/specs/latest/man/html/vkGetDescriptorSetLayoutHostMappingInfoVAinfvlk.html
     template <typename Dispatch = VULKAN_HPP_DEFAULT_DISPATCHER_TYPE>
-    VULKAN_HPP_NODISCARD VULKAN_HPP_NAMESPACE::DescriptorSetLayoutHostMappingInfoVALVE
-                         getDescriptorSetLayoutHostMappingInfoVALVE( const VULKAN_HPP_NAMESPACE::DescriptorSetBindingReferenceVALVE & bindingReference,
+    VULKAN_HPP_NODISCARD VULKAN_HPP_NAMESPACE::DescriptorSetLayoutHostMappingInfoVAinfvlk
+                         getDescriptorSetLayoutHostMappingInfoVAinfvlk( const VULKAN_HPP_NAMESPACE::DescriptorSetBindingReferenceVAinfvlk & bindingReference,
                                                                      Dispatch const & d VULKAN_HPP_DEFAULT_DISPATCHER_ASSIGNMENT ) const VULKAN_HPP_NOEXCEPT;
 #endif /* VULKAN_HPP_DISABLE_ENHANCED_MODE */
 
-    // wrapper function for command vkGetDescriptorSetHostMappingVALVE, see
-    // https://registry.khronos.org/vulkan/specs/latest/man/html/vkGetDescriptorSetHostMappingVALVE.html
+    // wrapper function for command vkGetDescriptorSetHostMappingVAinfvlk, see
+    // https://registry.khronos.org/vulkan/specs/latest/man/html/vkGetDescriptorSetHostMappingVAinfvlk.html
     template <typename Dispatch = VULKAN_HPP_DEFAULT_DISPATCHER_TYPE>
-    void getDescriptorSetHostMappingVALVE( VULKAN_HPP_NAMESPACE::DescriptorSet descriptorSet,
+    void getDescriptorSetHostMappingVAinfvlk( VULKAN_HPP_NAMESPACE::DescriptorSet descriptorSet,
                                            void **                             ppData,
                                            Dispatch const & d                  VULKAN_HPP_DEFAULT_DISPATCHER_ASSIGNMENT ) const VULKAN_HPP_NOEXCEPT;
 #ifndef VULKAN_HPP_DISABLE_ENHANCED_MODE
-    // wrapper function for command vkGetDescriptorSetHostMappingVALVE, see
-    // https://registry.khronos.org/vulkan/specs/latest/man/html/vkGetDescriptorSetHostMappingVALVE.html
+    // wrapper function for command vkGetDescriptorSetHostMappingVAinfvlk, see
+    // https://registry.khronos.org/vulkan/specs/latest/man/html/vkGetDescriptorSetHostMappingVAinfvlk.html
     template <typename Dispatch = VULKAN_HPP_DEFAULT_DISPATCHER_TYPE>
-    VULKAN_HPP_NODISCARD void * getDescriptorSetHostMappingVALVE( VULKAN_HPP_NAMESPACE::DescriptorSet descriptorSet,
+    VULKAN_HPP_NODISCARD void * getDescriptorSetHostMappingVAinfvlk( VULKAN_HPP_NAMESPACE::DescriptorSet descriptorSet,
                                                                   Dispatch const & d VULKAN_HPP_DEFAULT_DISPATCHER_ASSIGNMENT ) const VULKAN_HPP_NOEXCEPT;
 #endif /* VULKAN_HPP_DISABLE_ENHANCED_MODE */
 

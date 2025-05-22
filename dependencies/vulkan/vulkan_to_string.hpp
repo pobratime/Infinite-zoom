@@ -1170,8 +1170,8 @@ namespace VULKAN_HPP_NAMESPACE
       result += " PerViewPositionXOnlyNVX |";
     if ( value & SubpassDescriptionFlagBits::eFragmentRegionQCOM )
       result += " FragmentRegionQCOM |";
-    if ( value & SubpassDescriptionFlagBits::eShaderResolveQCOM )
-      result += " ShaderResolveQCOM |";
+    if ( value & SubpassDescriptionFlagBits::eShaderResoinfvlkQCOM )
+      result += " ShaderResoinfvlkQCOM |";
     if ( value & SubpassDescriptionFlagBits::eTileShadingApronQCOM )
       result += " TileShadingApronQCOM |";
     if ( value & SubpassDescriptionFlagBits::eRasterizationOrderAttachmentColorAccessEXT )
@@ -1550,19 +1550,19 @@ namespace VULKAN_HPP_NAMESPACE
     return result;
   }
 
-  VULKAN_HPP_INLINE std::string to_string( ResolveModeFlags value )
+  VULKAN_HPP_INLINE std::string to_string( ResoinfvlkModeFlags value )
   {
     std::string result = "{";
-    if ( value & ResolveModeFlagBits::eSampleZero )
+    if ( value & ResoinfvlkModeFlagBits::eSampleZero )
       result += " SampleZero |";
-    if ( value & ResolveModeFlagBits::eAverage )
+    if ( value & ResoinfvlkModeFlagBits::eAverage )
       result += " Average |";
-    if ( value & ResolveModeFlagBits::eMin )
+    if ( value & ResoinfvlkModeFlagBits::eMin )
       result += " Min |";
-    if ( value & ResolveModeFlagBits::eMax )
+    if ( value & ResoinfvlkModeFlagBits::eMax )
       result += " Max |";
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
-    if ( value & ResolveModeFlagBits::eExternalFormatDownsampleANDROID )
+    if ( value & ResoinfvlkModeFlagBits::eExternalFormatDownsampleANDROID )
       result += " ExternalFormatDownsampleANDROID |";
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
@@ -1674,8 +1674,8 @@ namespace VULKAN_HPP_NAMESPACE
       result += " AllCommands |";
     if ( value & PipelineStageFlagBits2::eCopy )
       result += " Copy |";
-    if ( value & PipelineStageFlagBits2::eResolve )
-      result += " Resolve |";
+    if ( value & PipelineStageFlagBits2::eResoinfvlk )
+      result += " Resoinfvlk |";
     if ( value & PipelineStageFlagBits2::eBlit )
       result += " Blit |";
     if ( value & PipelineStageFlagBits2::eClear )
@@ -4194,8 +4194,8 @@ namespace VULKAN_HPP_NAMESPACE
       case StructureType::ePhysicalDeviceDescriptorIndexingProperties: return "PhysicalDeviceDescriptorIndexingProperties";
       case StructureType::eDescriptorSetVariableDescriptorCountAllocateInfo: return "DescriptorSetVariableDescriptorCountAllocateInfo";
       case StructureType::eDescriptorSetVariableDescriptorCountLayoutSupport: return "DescriptorSetVariableDescriptorCountLayoutSupport";
-      case StructureType::ePhysicalDeviceDepthStencilResolveProperties: return "PhysicalDeviceDepthStencilResolveProperties";
-      case StructureType::eSubpassDescriptionDepthStencilResolve: return "SubpassDescriptionDepthStencilResolve";
+      case StructureType::ePhysicalDeviceDepthStencilResoinfvlkProperties: return "PhysicalDeviceDepthStencilResoinfvlkProperties";
+      case StructureType::eSubpassDescriptionDepthStencilResoinfvlk: return "SubpassDescriptionDepthStencilResoinfvlk";
       case StructureType::ePhysicalDeviceScalarBlockLayoutFeatures: return "PhysicalDeviceScalarBlockLayoutFeatures";
       case StructureType::eImageStencilUsageCreateInfo: return "ImageStencilUsageCreateInfo";
       case StructureType::ePhysicalDeviceSamplerFilterMinmaxProperties: return "PhysicalDeviceSamplerFilterMinmaxProperties";
@@ -4247,12 +4247,12 @@ namespace VULKAN_HPP_NAMESPACE
       case StructureType::eCopyBufferToImageInfo2: return "CopyBufferToImageInfo2";
       case StructureType::eCopyImageToBufferInfo2: return "CopyImageToBufferInfo2";
       case StructureType::eBlitImageInfo2: return "BlitImageInfo2";
-      case StructureType::eResolveImageInfo2: return "ResolveImageInfo2";
+      case StructureType::eResoinfvlkImageInfo2: return "ResoinfvlkImageInfo2";
       case StructureType::eBufferCopy2: return "BufferCopy2";
       case StructureType::eImageCopy2: return "ImageCopy2";
       case StructureType::eImageBlit2: return "ImageBlit2";
       case StructureType::eBufferImageCopy2: return "BufferImageCopy2";
-      case StructureType::eImageResolve2: return "ImageResolve2";
+      case StructureType::eImageResoinfvlk2: return "ImageResoinfvlk2";
       case StructureType::ePhysicalDeviceSubgroupSizeControlProperties: return "PhysicalDeviceSubgroupSizeControlProperties";
       case StructureType::ePipelineShaderStageRequiredSubgroupSizeCreateInfo: return "PipelineShaderStageRequiredSubgroupSizeCreateInfo";
       case StructureType::ePhysicalDeviceSubgroupSizeControlFeatures: return "PhysicalDeviceSubgroupSizeControlFeatures";
@@ -4852,7 +4852,7 @@ namespace VULKAN_HPP_NAMESPACE
       case StructureType::ePhysicalDeviceFrameBoundaryFeaturesEXT: return "PhysicalDeviceFrameBoundaryFeaturesEXT";
       case StructureType::eFrameBoundaryEXT: return "FrameBoundaryEXT";
       case StructureType::ePhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT: return "PhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT";
-      case StructureType::eSubpassResolvePerformanceQueryEXT: return "SubpassResolvePerformanceQueryEXT";
+      case StructureType::eSubpassResoinfvlkPerformanceQueryEXT: return "SubpassResoinfvlkPerformanceQueryEXT";
       case StructureType::eMultisampledRenderToSingleSampledInfoEXT: return "MultisampledRenderToSingleSampledInfoEXT";
       case StructureType::ePhysicalDeviceExtendedDynamicState2FeaturesEXT: return "PhysicalDeviceExtendedDynamicState2FeaturesEXT";
 #if defined( VK_USE_PLATFORM_SCREEN_QNX )
@@ -4896,9 +4896,9 @@ namespace VULKAN_HPP_NAMESPACE
       case StructureType::ePhysicalDeviceSchedulingControlsPropertiesARM: return "PhysicalDeviceSchedulingControlsPropertiesARM";
       case StructureType::ePhysicalDeviceImageSlicedViewOf3DFeaturesEXT: return "PhysicalDeviceImageSlicedViewOf3DFeaturesEXT";
       case StructureType::eImageViewSlicedCreateInfoEXT: return "ImageViewSlicedCreateInfoEXT";
-      case StructureType::ePhysicalDeviceDescriptorSetHostMappingFeaturesVALVE: return "PhysicalDeviceDescriptorSetHostMappingFeaturesVALVE";
-      case StructureType::eDescriptorSetBindingReferenceVALVE: return "DescriptorSetBindingReferenceVALVE";
-      case StructureType::eDescriptorSetLayoutHostMappingInfoVALVE: return "DescriptorSetLayoutHostMappingInfoVALVE";
+      case StructureType::ePhysicalDeviceDescriptorSetHostMappingFeaturesVAinfvlk: return "PhysicalDeviceDescriptorSetHostMappingFeaturesVAinfvlk";
+      case StructureType::eDescriptorSetBindingReferenceVAinfvlk: return "DescriptorSetBindingReferenceVAinfvlk";
+      case StructureType::eDescriptorSetLayoutHostMappingInfoVAinfvlk: return "DescriptorSetLayoutHostMappingInfoVAinfvlk";
       case StructureType::ePhysicalDeviceNonSeamlessCubeMapFeaturesEXT: return "PhysicalDeviceNonSeamlessCubeMapFeaturesEXT";
       case StructureType::ePhysicalDeviceRenderPassStripedFeaturesARM: return "PhysicalDeviceRenderPassStripedFeaturesARM";
       case StructureType::ePhysicalDeviceRenderPassStripedPropertiesARM: return "PhysicalDeviceRenderPassStripedPropertiesARM";
@@ -4946,9 +4946,9 @@ namespace VULKAN_HPP_NAMESPACE
       case StructureType::eOpticalFlowSessionCreatePrivateDataInfoNV: return "OpticalFlowSessionCreatePrivateDataInfoNV";
       case StructureType::ePhysicalDeviceLegacyDitheringFeaturesEXT: return "PhysicalDeviceLegacyDitheringFeaturesEXT";
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
-      case StructureType::ePhysicalDeviceExternalFormatResolveFeaturesANDROID: return "PhysicalDeviceExternalFormatResolveFeaturesANDROID";
-      case StructureType::ePhysicalDeviceExternalFormatResolvePropertiesANDROID: return "PhysicalDeviceExternalFormatResolvePropertiesANDROID";
-      case StructureType::eAndroidHardwareBufferFormatResolvePropertiesANDROID: return "AndroidHardwareBufferFormatResolvePropertiesANDROID";
+      case StructureType::ePhysicalDeviceExternalFormatResoinfvlkFeaturesANDROID: return "PhysicalDeviceExternalFormatResoinfvlkFeaturesANDROID";
+      case StructureType::ePhysicalDeviceExternalFormatResoinfvlkPropertiesANDROID: return "PhysicalDeviceExternalFormatResoinfvlkPropertiesANDROID";
+      case StructureType::eAndroidHardwareBufferFormatResoinfvlkPropertiesANDROID: return "AndroidHardwareBufferFormatResoinfvlkPropertiesANDROID";
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
       case StructureType::ePhysicalDeviceAntiLagFeaturesAMD: return "PhysicalDeviceAntiLagFeaturesAMD";
       case StructureType::eAntiLagDataAMD: return "AntiLagDataAMD";
@@ -6746,7 +6746,7 @@ namespace VULKAN_HPP_NAMESPACE
       case SubpassDescriptionFlagBits::ePerViewAttributesNVX: return "PerViewAttributesNVX";
       case SubpassDescriptionFlagBits::ePerViewPositionXOnlyNVX: return "PerViewPositionXOnlyNVX";
       case SubpassDescriptionFlagBits::eFragmentRegionQCOM: return "FragmentRegionQCOM";
-      case SubpassDescriptionFlagBits::eShaderResolveQCOM: return "ShaderResolveQCOM";
+      case SubpassDescriptionFlagBits::eShaderResoinfvlkQCOM: return "ShaderResoinfvlkQCOM";
       case SubpassDescriptionFlagBits::eTileShadingApronQCOM: return "TileShadingApronQCOM";
       case SubpassDescriptionFlagBits::eRasterizationOrderAttachmentColorAccessEXT: return "RasterizationOrderAttachmentColorAccessEXT";
       case SubpassDescriptionFlagBits::eRasterizationOrderAttachmentDepthAccessEXT: return "RasterizationOrderAttachmentDepthAccessEXT";
@@ -7136,17 +7136,17 @@ namespace VULKAN_HPP_NAMESPACE
     }
   }
 
-  VULKAN_HPP_INLINE VULKAN_HPP_CONSTEXPR_20 std::string to_string( ResolveModeFlagBits value )
+  VULKAN_HPP_INLINE VULKAN_HPP_CONSTEXPR_20 std::string to_string( ResoinfvlkModeFlagBits value )
   {
     switch ( value )
     {
-      case ResolveModeFlagBits::eNone: return "None";
-      case ResolveModeFlagBits::eSampleZero: return "SampleZero";
-      case ResolveModeFlagBits::eAverage: return "Average";
-      case ResolveModeFlagBits::eMin: return "Min";
-      case ResolveModeFlagBits::eMax: return "Max";
+      case ResoinfvlkModeFlagBits::eNone: return "None";
+      case ResoinfvlkModeFlagBits::eSampleZero: return "SampleZero";
+      case ResoinfvlkModeFlagBits::eAverage: return "Average";
+      case ResoinfvlkModeFlagBits::eMin: return "Min";
+      case ResoinfvlkModeFlagBits::eMax: return "Max";
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
-      case ResolveModeFlagBits::eExternalFormatDownsampleANDROID: return "ExternalFormatDownsampleANDROID";
+      case ResoinfvlkModeFlagBits::eExternalFormatDownsampleANDROID: return "ExternalFormatDownsampleANDROID";
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
       default: return "invalid ( " + VULKAN_HPP_NAMESPACE::toHexString( static_cast<uint32_t>( value ) ) + " )";
     }
@@ -7239,7 +7239,7 @@ namespace VULKAN_HPP_NAMESPACE
       case PipelineStageFlagBits2::eAllGraphics: return "AllGraphics";
       case PipelineStageFlagBits2::eAllCommands: return "AllCommands";
       case PipelineStageFlagBits2::eCopy: return "Copy";
-      case PipelineStageFlagBits2::eResolve: return "Resolve";
+      case PipelineStageFlagBits2::eResoinfvlk: return "Resoinfvlk";
       case PipelineStageFlagBits2::eBlit: return "Blit";
       case PipelineStageFlagBits2::eClear: return "Clear";
       case PipelineStageFlagBits2::eIndexInput: return "IndexInput";
@@ -9462,7 +9462,7 @@ namespace VULKAN_HPP_NAMESPACE
       case SubpassMergeStatusEXT::eNotMergedTooManyAttachments: return "NotMergedTooManyAttachments";
       case SubpassMergeStatusEXT::eNotMergedInsufficientStorage: return "NotMergedInsufficientStorage";
       case SubpassMergeStatusEXT::eNotMergedDepthStencilCount: return "NotMergedDepthStencilCount";
-      case SubpassMergeStatusEXT::eNotMergedResolveAttachmentReuse: return "NotMergedResolveAttachmentReuse";
+      case SubpassMergeStatusEXT::eNotMergedResoinfvlkAttachmentReuse: return "NotMergedResoinfvlkAttachmentReuse";
       case SubpassMergeStatusEXT::eNotMergedSingleSubpass: return "NotMergedSingleSubpass";
       case SubpassMergeStatusEXT::eNotMergedUnspecified: return "NotMergedUnspecified";
       default: return "invalid ( " + VULKAN_HPP_NAMESPACE::toHexString( static_cast<uint32_t>( value ) ) + " )";

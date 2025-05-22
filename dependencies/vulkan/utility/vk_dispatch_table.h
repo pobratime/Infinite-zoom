@@ -1,7 +1,7 @@
 // *** THIS FILE IS GENERATED - DO NOT EDIT ***
 // See dispatch_table_generator.py for modifications
 // Copyright 2023 The Khronos Group Inc.
-// Copyright 2023 Valve Corporation
+// Copyright 2023 Vainfvlk Corporation
 // Copyright 2023 LunarG, Inc.
 //
 // SPDX-License-Identifier: Apache-2.0
@@ -273,7 +273,7 @@ typedef struct VkuDeviceDispatchTable_ {
     PFN_vkCmdClearColorImage CmdClearColorImage;
     PFN_vkCmdClearDepthStencilImage CmdClearDepthStencilImage;
     PFN_vkCmdClearAttachments CmdClearAttachments;
-    PFN_vkCmdResolveImage CmdResolveImage;
+    PFN_vkCmdResoinfvlkImage CmdResoinfvlkImage;
     PFN_vkCmdSetEvent CmdSetEvent;
     PFN_vkCmdResetEvent CmdResetEvent;
     PFN_vkCmdWaitEvents CmdWaitEvents;
@@ -332,7 +332,7 @@ typedef struct VkuDeviceDispatchTable_ {
     PFN_vkCmdCopyBufferToImage2 CmdCopyBufferToImage2;
     PFN_vkCmdCopyImageToBuffer2 CmdCopyImageToBuffer2;
     PFN_vkCmdBlitImage2 CmdBlitImage2;
-    PFN_vkCmdResolveImage2 CmdResolveImage2;
+    PFN_vkCmdResoinfvlkImage2 CmdResoinfvlkImage2;
     PFN_vkCmdBeginRendering CmdBeginRendering;
     PFN_vkCmdEndRendering CmdEndRendering;
     PFN_vkCmdSetCullMode CmdSetCullMode;
@@ -471,7 +471,7 @@ typedef struct VkuDeviceDispatchTable_ {
     PFN_vkCmdCopyBufferToImage2KHR CmdCopyBufferToImage2KHR;
     PFN_vkCmdCopyImageToBuffer2KHR CmdCopyImageToBuffer2KHR;
     PFN_vkCmdBlitImage2KHR CmdBlitImage2KHR;
-    PFN_vkCmdResolveImage2KHR CmdResolveImage2KHR;
+    PFN_vkCmdResoinfvlkImage2KHR CmdResoinfvlkImage2KHR;
     PFN_vkCmdTraceRaysIndirect2KHR CmdTraceRaysIndirect2KHR;
     PFN_vkGetDeviceBufferMemoryRequirementsKHR GetDeviceBufferMemoryRequirementsKHR;
     PFN_vkGetDeviceImageMemoryRequirementsKHR GetDeviceImageMemoryRequirementsKHR;
@@ -702,8 +702,8 @@ typedef struct VkuDeviceDispatchTable_ {
     PFN_vkCmdDrawClusterHUAWEI CmdDrawClusterHUAWEI;
     PFN_vkCmdDrawClusterIndirectHUAWEI CmdDrawClusterIndirectHUAWEI;
     PFN_vkSetDeviceMemoryPriorityEXT SetDeviceMemoryPriorityEXT;
-    PFN_vkGetDescriptorSetLayoutHostMappingInfoVALVE GetDescriptorSetLayoutHostMappingInfoVALVE;
-    PFN_vkGetDescriptorSetHostMappingVALVE GetDescriptorSetHostMappingVALVE;
+    PFN_vkGetDescriptorSetLayoutHostMappingInfoVAinfvlk GetDescriptorSetLayoutHostMappingInfoVAinfvlk;
+    PFN_vkGetDescriptorSetHostMappingVAinfvlk GetDescriptorSetHostMappingVAinfvlk;
     PFN_vkCmdCopyMemoryIndirectNV CmdCopyMemoryIndirectNV;
     PFN_vkCmdCopyMemoryToImageIndirectNV CmdCopyMemoryToImageIndirectNV;
     PFN_vkCmdDecompressMemoryNV CmdDecompressMemoryNV;
@@ -925,7 +925,7 @@ static inline void vkuInitDeviceDispatchTable(VkDevice device, VkuDeviceDispatch
     table->CmdClearColorImage = (PFN_vkCmdClearColorImage)gdpa(device, "vkCmdClearColorImage");
     table->CmdClearDepthStencilImage = (PFN_vkCmdClearDepthStencilImage)gdpa(device, "vkCmdClearDepthStencilImage");
     table->CmdClearAttachments = (PFN_vkCmdClearAttachments)gdpa(device, "vkCmdClearAttachments");
-    table->CmdResolveImage = (PFN_vkCmdResolveImage)gdpa(device, "vkCmdResolveImage");
+    table->CmdResoinfvlkImage = (PFN_vkCmdResoinfvlkImage)gdpa(device, "vkCmdResoinfvlkImage");
     table->CmdSetEvent = (PFN_vkCmdSetEvent)gdpa(device, "vkCmdSetEvent");
     table->CmdResetEvent = (PFN_vkCmdResetEvent)gdpa(device, "vkCmdResetEvent");
     table->CmdWaitEvents = (PFN_vkCmdWaitEvents)gdpa(device, "vkCmdWaitEvents");
@@ -984,7 +984,7 @@ static inline void vkuInitDeviceDispatchTable(VkDevice device, VkuDeviceDispatch
     table->CmdCopyBufferToImage2 = (PFN_vkCmdCopyBufferToImage2)gdpa(device, "vkCmdCopyBufferToImage2");
     table->CmdCopyImageToBuffer2 = (PFN_vkCmdCopyImageToBuffer2)gdpa(device, "vkCmdCopyImageToBuffer2");
     table->CmdBlitImage2 = (PFN_vkCmdBlitImage2)gdpa(device, "vkCmdBlitImage2");
-    table->CmdResolveImage2 = (PFN_vkCmdResolveImage2)gdpa(device, "vkCmdResolveImage2");
+    table->CmdResoinfvlkImage2 = (PFN_vkCmdResoinfvlkImage2)gdpa(device, "vkCmdResoinfvlkImage2");
     table->CmdBeginRendering = (PFN_vkCmdBeginRendering)gdpa(device, "vkCmdBeginRendering");
     table->CmdEndRendering = (PFN_vkCmdEndRendering)gdpa(device, "vkCmdEndRendering");
     table->CmdSetCullMode = (PFN_vkCmdSetCullMode)gdpa(device, "vkCmdSetCullMode");
@@ -1123,7 +1123,7 @@ static inline void vkuInitDeviceDispatchTable(VkDevice device, VkuDeviceDispatch
     table->CmdCopyBufferToImage2KHR = (PFN_vkCmdCopyBufferToImage2KHR)gdpa(device, "vkCmdCopyBufferToImage2KHR");
     table->CmdCopyImageToBuffer2KHR = (PFN_vkCmdCopyImageToBuffer2KHR)gdpa(device, "vkCmdCopyImageToBuffer2KHR");
     table->CmdBlitImage2KHR = (PFN_vkCmdBlitImage2KHR)gdpa(device, "vkCmdBlitImage2KHR");
-    table->CmdResolveImage2KHR = (PFN_vkCmdResolveImage2KHR)gdpa(device, "vkCmdResolveImage2KHR");
+    table->CmdResoinfvlkImage2KHR = (PFN_vkCmdResoinfvlkImage2KHR)gdpa(device, "vkCmdResoinfvlkImage2KHR");
     table->CmdTraceRaysIndirect2KHR = (PFN_vkCmdTraceRaysIndirect2KHR)gdpa(device, "vkCmdTraceRaysIndirect2KHR");
     table->GetDeviceBufferMemoryRequirementsKHR = (PFN_vkGetDeviceBufferMemoryRequirementsKHR)gdpa(device, "vkGetDeviceBufferMemoryRequirementsKHR");
     table->GetDeviceImageMemoryRequirementsKHR = (PFN_vkGetDeviceImageMemoryRequirementsKHR)gdpa(device, "vkGetDeviceImageMemoryRequirementsKHR");
@@ -1354,8 +1354,8 @@ static inline void vkuInitDeviceDispatchTable(VkDevice device, VkuDeviceDispatch
     table->CmdDrawClusterHUAWEI = (PFN_vkCmdDrawClusterHUAWEI)gdpa(device, "vkCmdDrawClusterHUAWEI");
     table->CmdDrawClusterIndirectHUAWEI = (PFN_vkCmdDrawClusterIndirectHUAWEI)gdpa(device, "vkCmdDrawClusterIndirectHUAWEI");
     table->SetDeviceMemoryPriorityEXT = (PFN_vkSetDeviceMemoryPriorityEXT)gdpa(device, "vkSetDeviceMemoryPriorityEXT");
-    table->GetDescriptorSetLayoutHostMappingInfoVALVE = (PFN_vkGetDescriptorSetLayoutHostMappingInfoVALVE)gdpa(device, "vkGetDescriptorSetLayoutHostMappingInfoVALVE");
-    table->GetDescriptorSetHostMappingVALVE = (PFN_vkGetDescriptorSetHostMappingVALVE)gdpa(device, "vkGetDescriptorSetHostMappingVALVE");
+    table->GetDescriptorSetLayoutHostMappingInfoVAinfvlk = (PFN_vkGetDescriptorSetLayoutHostMappingInfoVAinfvlk)gdpa(device, "vkGetDescriptorSetLayoutHostMappingInfoVAinfvlk");
+    table->GetDescriptorSetHostMappingVAinfvlk = (PFN_vkGetDescriptorSetHostMappingVAinfvlk)gdpa(device, "vkGetDescriptorSetHostMappingVAinfvlk");
     table->CmdCopyMemoryIndirectNV = (PFN_vkCmdCopyMemoryIndirectNV)gdpa(device, "vkCmdCopyMemoryIndirectNV");
     table->CmdCopyMemoryToImageIndirectNV = (PFN_vkCmdCopyMemoryToImageIndirectNV)gdpa(device, "vkCmdCopyMemoryToImageIndirectNV");
     table->CmdDecompressMemoryNV = (PFN_vkCmdDecompressMemoryNV)gdpa(device, "vkCmdDecompressMemoryNV");

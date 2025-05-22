@@ -136,6 +136,78 @@ infinite_zoom_vulkan/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/infinite_zoom_vulkan.dir/build.make CMakeFiles/infinite_zoom_vulkan.dir/build
 .PHONY : infinite_zoom_vulkan/fast
 
+src/infz_app.o: src/infz_app.cpp.o
+.PHONY : src/infz_app.o
+
+# target to build an object file
+src/infz_app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infinite_zoom_vulkan.dir/build.make CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.o
+.PHONY : src/infz_app.cpp.o
+
+src/infz_app.i: src/infz_app.cpp.i
+.PHONY : src/infz_app.i
+
+# target to preprocess a source file
+src/infz_app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infinite_zoom_vulkan.dir/build.make CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.i
+.PHONY : src/infz_app.cpp.i
+
+src/infz_app.s: src/infz_app.cpp.s
+.PHONY : src/infz_app.s
+
+# target to generate assembly for a file
+src/infz_app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infinite_zoom_vulkan.dir/build.make CMakeFiles/infinite_zoom_vulkan.dir/src/infz_app.cpp.s
+.PHONY : src/infz_app.cpp.s
+
+src/infz_vulkan.o: src/infz_vulkan.cpp.o
+.PHONY : src/infz_vulkan.o
+
+# target to build an object file
+src/infz_vulkan.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infinite_zoom_vulkan.dir/build.make CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.o
+.PHONY : src/infz_vulkan.cpp.o
+
+src/infz_vulkan.i: src/infz_vulkan.cpp.i
+.PHONY : src/infz_vulkan.i
+
+# target to preprocess a source file
+src/infz_vulkan.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infinite_zoom_vulkan.dir/build.make CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.i
+.PHONY : src/infz_vulkan.cpp.i
+
+src/infz_vulkan.s: src/infz_vulkan.cpp.s
+.PHONY : src/infz_vulkan.s
+
+# target to generate assembly for a file
+src/infz_vulkan.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infinite_zoom_vulkan.dir/build.make CMakeFiles/infinite_zoom_vulkan.dir/src/infz_vulkan.cpp.s
+.PHONY : src/infz_vulkan.cpp.s
+
+src/infz_window.o: src/infz_window.cpp.o
+.PHONY : src/infz_window.o
+
+# target to build an object file
+src/infz_window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infinite_zoom_vulkan.dir/build.make CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.o
+.PHONY : src/infz_window.cpp.o
+
+src/infz_window.i: src/infz_window.cpp.i
+.PHONY : src/infz_window.i
+
+# target to preprocess a source file
+src/infz_window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infinite_zoom_vulkan.dir/build.make CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.i
+.PHONY : src/infz_window.cpp.i
+
+src/infz_window.s: src/infz_window.cpp.s
+.PHONY : src/infz_window.s
+
+# target to generate assembly for a file
+src/infz_window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infinite_zoom_vulkan.dir/build.make CMakeFiles/infinite_zoom_vulkan.dir/src/infz_window.cpp.s
+.PHONY : src/infz_window.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -170,6 +242,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... infinite_zoom_vulkan"
+	@echo "... src/infz_app.o"
+	@echo "... src/infz_app.i"
+	@echo "... src/infz_app.s"
+	@echo "... src/infz_vulkan.o"
+	@echo "... src/infz_vulkan.i"
+	@echo "... src/infz_vulkan.s"
+	@echo "... src/infz_window.o"
+	@echo "... src/infz_window.i"
+	@echo "... src/infz_window.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

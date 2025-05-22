@@ -1,6 +1,6 @@
 
 /*
- * Copyright (C) 2021-2025 Valve Corporation
+ * Copyright (C) 2021-2025 Vainfvlk Corporation
  * Copyright (C) 2021-2025 LunarG, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License")
@@ -74,7 +74,7 @@
 
 #if defined(VK_VERSION_1_3) && \
     defined(VP_ANDROID_baseline_2022) && \
-    defined(VK_ANDROID_external_format_resolve) && \
+    defined(VK_ANDROID_external_format_resoinfvlk) && \
     defined(VK_EXT_4444_formats) && \
     defined(VK_EXT_custom_border_color) && \
     defined(VK_EXT_device_memory_report) && \
@@ -200,7 +200,7 @@
     defined(VK_KHR_bind_memory2) && \
     defined(VK_KHR_create_renderpass2) && \
     defined(VK_KHR_dedicated_allocation) && \
-    defined(VK_KHR_depth_stencil_resolve) && \
+    defined(VK_KHR_depth_stencil_resoinfvlk) && \
     defined(VK_KHR_descriptor_update_template) && \
     defined(VK_KHR_device_group) && \
     defined(VK_KHR_driver_properties) && \
@@ -244,7 +244,7 @@
     defined(VK_KHR_bind_memory2) && \
     defined(VK_KHR_create_renderpass2) && \
     defined(VK_KHR_dedicated_allocation) && \
-    defined(VK_KHR_depth_stencil_resolve) && \
+    defined(VK_KHR_depth_stencil_resoinfvlk) && \
     defined(VK_KHR_descriptor_update_template) && \
     defined(VK_KHR_device_group) && \
     defined(VK_KHR_driver_properties) && \
@@ -309,7 +309,7 @@
     defined(VK_KHR_copy_commands2) && \
     defined(VK_KHR_create_renderpass2) && \
     defined(VK_KHR_dedicated_allocation) && \
-    defined(VK_KHR_depth_stencil_resolve) && \
+    defined(VK_KHR_depth_stencil_resoinfvlk) && \
     defined(VK_KHR_descriptor_update_template) && \
     defined(VK_KHR_device_group) && \
     defined(VK_KHR_driver_properties) && \
@@ -1171,7 +1171,7 @@ static const VkExtensionProperties instanceExtensions[] = {
 };
 
 static const VkExtensionProperties deviceExtensions[] = {
-    VkExtensionProperties{ VK_ANDROID_EXTERNAL_FORMAT_RESOLVE_EXTENSION_NAME, 1 },
+    VkExtensionProperties{ VK_ANDROID_EXTERNAL_FORMAT_RESOinfvlk_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_EXT_4444_FORMATS_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_EXT_CUSTOM_BORDER_COLOR_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_EXT_DEVICE_MEMORY_REPORT_EXTENSION_NAME, 1 },
@@ -9109,7 +9109,7 @@ static const VkStructureType featureStructTypes[] = {
 };
 
 static const VkStructureType propertyStructTypes[] = {
-    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_STENCIL_RESOLVE_PROPERTIES_KHR,
+    VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_STENCIL_RESOinfvlk_PROPERTIES_KHR,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_PROPERTIES_EXT,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_INLINE_UNIFORM_BLOCK_PROPERTIES_EXT,
     VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES_KHR,
@@ -9142,7 +9142,7 @@ static const VkExtensionProperties deviceExtensions[] = {
     VkExtensionProperties{ VK_KHR_BIND_MEMORY_2_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_CREATE_RENDERPASS_2_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DEDICATED_ALLOCATION_EXTENSION_NAME, 3 },
-    VkExtensionProperties{ VK_KHR_DEPTH_STENCIL_RESOLVE_EXTENSION_NAME, 1 },
+    VkExtensionProperties{ VK_KHR_DEPTH_STENCIL_RESOinfvlk_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DESCRIPTOR_UPDATE_TEMPLATE_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DEVICE_GROUP_EXTENSION_NAME, 4 },
     VkExtensionProperties{ VK_KHR_DRIVER_PROPERTIES_EXTENSION_NAME, 1 },
@@ -9421,8 +9421,8 @@ static const VpStructChainerDesc chainerDesc = {
         pfnCb(p, pUser);
     },
     [](VkBaseOutStructure* p, void* pUser, PFN_vpStructChainerCb pfnCb) {
-        VkPhysicalDeviceDepthStencilResolvePropertiesKHR physicalDeviceDepthStencilResolvePropertiesKHR{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_STENCIL_RESOLVE_PROPERTIES_KHR, nullptr };
-        VkPhysicalDeviceDescriptorIndexingPropertiesEXT physicalDeviceDescriptorIndexingPropertiesEXT{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_PROPERTIES_EXT, &physicalDeviceDepthStencilResolvePropertiesKHR };
+        VkPhysicalDeviceDepthStencilResoinfvlkPropertiesKHR physicalDeviceDepthStencilResoinfvlkPropertiesKHR{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_STENCIL_RESOinfvlk_PROPERTIES_KHR, nullptr };
+        VkPhysicalDeviceDescriptorIndexingPropertiesEXT physicalDeviceDescriptorIndexingPropertiesEXT{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_PROPERTIES_EXT, &physicalDeviceDepthStencilResoinfvlkPropertiesKHR };
         VkPhysicalDeviceInlineUniformBlockPropertiesEXT physicalDeviceInlineUniformBlockPropertiesEXT{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_INLINE_UNIFORM_BLOCK_PROPERTIES_EXT, &physicalDeviceDescriptorIndexingPropertiesEXT };
         VkPhysicalDeviceMaintenance3PropertiesKHR physicalDeviceMaintenance3PropertiesKHR{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES_KHR, &physicalDeviceInlineUniformBlockPropertiesEXT };
         VkPhysicalDeviceMultiviewPropertiesKHR physicalDeviceMultiviewPropertiesKHR{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PROPERTIES_KHR, &physicalDeviceMaintenance3PropertiesKHR };
@@ -9462,7 +9462,7 @@ static const VkExtensionProperties deviceExtensions[] = {
     VkExtensionProperties{ VK_KHR_BIND_MEMORY_2_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_CREATE_RENDERPASS_2_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DEDICATED_ALLOCATION_EXTENSION_NAME, 3 },
-    VkExtensionProperties{ VK_KHR_DEPTH_STENCIL_RESOLVE_EXTENSION_NAME, 1 },
+    VkExtensionProperties{ VK_KHR_DEPTH_STENCIL_RESOinfvlk_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DESCRIPTOR_UPDATE_TEMPLATE_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DEVICE_GROUP_EXTENSION_NAME, 4 },
     VkExtensionProperties{ VK_KHR_DRIVER_PROPERTIES_EXTENSION_NAME, 1 },
@@ -9715,12 +9715,12 @@ static const VpFeatureDesc featureDesc = {
 static const VpPropertyDesc propertyDesc = {
     [](VkBaseOutStructure* p) { (void)p;
             switch (p->sType) {
-                case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_STENCIL_RESOLVE_PROPERTIES_KHR: {
-                    VkPhysicalDeviceDepthStencilResolvePropertiesKHR* s = static_cast<VkPhysicalDeviceDepthStencilResolvePropertiesKHR*>(static_cast<void*>(p));
-                    s->independentResolve = VK_TRUE;
-                    s->independentResolveNone = VK_TRUE;
-                    s->supportedDepthResolveModes |= (VK_RESOLVE_MODE_SAMPLE_ZERO_BIT);
-                    s->supportedStencilResolveModes |= (VK_RESOLVE_MODE_SAMPLE_ZERO_BIT);
+                case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_STENCIL_RESOinfvlk_PROPERTIES_KHR: {
+                    VkPhysicalDeviceDepthStencilResoinfvlkPropertiesKHR* s = static_cast<VkPhysicalDeviceDepthStencilResoinfvlkPropertiesKHR*>(static_cast<void*>(p));
+                    s->independentResoinfvlk = VK_TRUE;
+                    s->independentResoinfvlkNone = VK_TRUE;
+                    s->supportedDepthResoinfvlkModes |= (VK_RESOinfvlk_MODE_SAMPLE_ZERO_BIT);
+                    s->supportedStencilResoinfvlkModes |= (VK_RESOinfvlk_MODE_SAMPLE_ZERO_BIT);
                 } break;
                 case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_PROPERTIES_EXT: {
                     VkPhysicalDeviceDescriptorIndexingPropertiesEXT* s = static_cast<VkPhysicalDeviceDescriptorIndexingPropertiesEXT*>(static_cast<void*>(p));
@@ -9911,12 +9911,12 @@ static const VpPropertyDesc propertyDesc = {
     [](VkBaseOutStructure* p) -> bool { (void)p;
         bool ret = true;
             switch (p->sType) {
-                case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_STENCIL_RESOLVE_PROPERTIES_KHR: {
-                    VkPhysicalDeviceDepthStencilResolvePropertiesKHR* s = static_cast<VkPhysicalDeviceDepthStencilResolvePropertiesKHR*>(static_cast<void*>(p));
-                    ret = ret && (s->independentResolve >= VK_TRUE);
-                    ret = ret && (s->independentResolveNone >= VK_TRUE);
-                    ret = ret && (vpCheckFlags(s->supportedDepthResolveModes, (VK_RESOLVE_MODE_SAMPLE_ZERO_BIT)));
-                    ret = ret && (vpCheckFlags(s->supportedStencilResolveModes, (VK_RESOLVE_MODE_SAMPLE_ZERO_BIT)));
+                case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_STENCIL_RESOinfvlk_PROPERTIES_KHR: {
+                    VkPhysicalDeviceDepthStencilResoinfvlkPropertiesKHR* s = static_cast<VkPhysicalDeviceDepthStencilResoinfvlkPropertiesKHR*>(static_cast<void*>(p));
+                    ret = ret && (s->independentResoinfvlk >= VK_TRUE);
+                    ret = ret && (s->independentResoinfvlkNone >= VK_TRUE);
+                    ret = ret && (vpCheckFlags(s->supportedDepthResoinfvlkModes, (VK_RESOinfvlk_MODE_SAMPLE_ZERO_BIT)));
+                    ret = ret && (vpCheckFlags(s->supportedStencilResoinfvlkModes, (VK_RESOinfvlk_MODE_SAMPLE_ZERO_BIT)));
                 } break;
                 case VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_PROPERTIES_EXT: {
                     VkPhysicalDeviceDescriptorIndexingPropertiesEXT* s = static_cast<VkPhysicalDeviceDescriptorIndexingPropertiesEXT*>(static_cast<void*>(p));
@@ -12313,8 +12313,8 @@ static const VpStructChainerDesc chainerDesc = {
         pfnCb(p, pUser);
     },
     [](VkBaseOutStructure* p, void* pUser, PFN_vpStructChainerCb pfnCb) {
-        VkPhysicalDeviceDepthStencilResolvePropertiesKHR physicalDeviceDepthStencilResolvePropertiesKHR{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_STENCIL_RESOLVE_PROPERTIES_KHR, nullptr };
-        VkPhysicalDeviceDescriptorIndexingPropertiesEXT physicalDeviceDescriptorIndexingPropertiesEXT{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_PROPERTIES_EXT, &physicalDeviceDepthStencilResolvePropertiesKHR };
+        VkPhysicalDeviceDepthStencilResoinfvlkPropertiesKHR physicalDeviceDepthStencilResoinfvlkPropertiesKHR{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_STENCIL_RESOinfvlk_PROPERTIES_KHR, nullptr };
+        VkPhysicalDeviceDescriptorIndexingPropertiesEXT physicalDeviceDescriptorIndexingPropertiesEXT{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_INDEXING_PROPERTIES_EXT, &physicalDeviceDepthStencilResoinfvlkPropertiesKHR };
         VkPhysicalDeviceInlineUniformBlockPropertiesEXT physicalDeviceInlineUniformBlockPropertiesEXT{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_INLINE_UNIFORM_BLOCK_PROPERTIES_EXT, &physicalDeviceDescriptorIndexingPropertiesEXT };
         VkPhysicalDeviceMaintenance3PropertiesKHR physicalDeviceMaintenance3PropertiesKHR{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_3_PROPERTIES_KHR, &physicalDeviceInlineUniformBlockPropertiesEXT };
         VkPhysicalDeviceMultiviewPropertiesKHR physicalDeviceMultiviewPropertiesKHR{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PROPERTIES_KHR, &physicalDeviceMaintenance3PropertiesKHR };
@@ -12380,7 +12380,7 @@ static const VkExtensionProperties deviceExtensions[] = {
     VkExtensionProperties{ VK_KHR_BIND_MEMORY_2_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_CREATE_RENDERPASS_2_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DEDICATED_ALLOCATION_EXTENSION_NAME, 3 },
-    VkExtensionProperties{ VK_KHR_DEPTH_STENCIL_RESOLVE_EXTENSION_NAME, 1 },
+    VkExtensionProperties{ VK_KHR_DEPTH_STENCIL_RESOinfvlk_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DESCRIPTOR_UPDATE_TEMPLATE_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DEVICE_GROUP_EXTENSION_NAME, 4 },
     VkExtensionProperties{ VK_KHR_DRIVER_PROPERTIES_EXTENSION_NAME, 1 },
@@ -12659,7 +12659,7 @@ static const VkExtensionProperties deviceExtensions[] = {
     VkExtensionProperties{ VK_KHR_BIND_MEMORY_2_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_CREATE_RENDERPASS_2_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DEDICATED_ALLOCATION_EXTENSION_NAME, 3 },
-    VkExtensionProperties{ VK_KHR_DEPTH_STENCIL_RESOLVE_EXTENSION_NAME, 1 },
+    VkExtensionProperties{ VK_KHR_DEPTH_STENCIL_RESOinfvlk_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DESCRIPTOR_UPDATE_TEMPLATE_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DEVICE_GROUP_EXTENSION_NAME, 4 },
     VkExtensionProperties{ VK_KHR_DRIVER_PROPERTIES_EXTENSION_NAME, 1 },
@@ -13024,8 +13024,8 @@ static const VpPropertyDesc propertyDesc = {
                     s->filterMinmaxImageComponentMapping = VK_FALSE;
                     s->filterMinmaxSingleComponentFormats = VK_FALSE;
                     s->framebufferIntegerColorSampleCounts |= (VK_SAMPLE_COUNT_1_BIT);
-                    s->independentResolve = VK_TRUE;
-                    s->independentResolveNone = VK_TRUE;
+                    s->independentResoinfvlk = VK_TRUE;
+                    s->independentResoinfvlkNone = VK_TRUE;
                     s->maxDescriptorSetUpdateAfterBindInputAttachments = 256;
                     s->maxDescriptorSetUpdateAfterBindSampledImages = 640;
                     s->maxDescriptorSetUpdateAfterBindSamplers = 80;
@@ -13065,8 +13065,8 @@ static const VpPropertyDesc propertyDesc = {
                     s->shaderStorageBufferArrayNonUniformIndexingNative = VK_FALSE;
                     s->shaderStorageImageArrayNonUniformIndexingNative = VK_FALSE;
                     s->shaderUniformBufferArrayNonUniformIndexingNative = VK_FALSE;
-                    s->supportedDepthResolveModes |= (VK_RESOLVE_MODE_SAMPLE_ZERO_BIT);
-                    s->supportedStencilResolveModes |= (VK_RESOLVE_MODE_SAMPLE_ZERO_BIT);
+                    s->supportedDepthResoinfvlkModes |= (VK_RESOinfvlk_MODE_SAMPLE_ZERO_BIT);
+                    s->supportedStencilResoinfvlkModes |= (VK_RESOinfvlk_MODE_SAMPLE_ZERO_BIT);
                 } break;
                 default: break;
             }
@@ -13224,8 +13224,8 @@ static const VpPropertyDesc propertyDesc = {
                     ret = ret && (s->filterMinmaxImageComponentMapping >= VK_FALSE);
                     ret = ret && (s->filterMinmaxSingleComponentFormats >= VK_FALSE);
                     ret = ret && (vpCheckFlags(s->framebufferIntegerColorSampleCounts, (VK_SAMPLE_COUNT_1_BIT)));
-                    ret = ret && (s->independentResolve >= VK_TRUE);
-                    ret = ret && (s->independentResolveNone >= VK_TRUE);
+                    ret = ret && (s->independentResoinfvlk >= VK_TRUE);
+                    ret = ret && (s->independentResoinfvlkNone >= VK_TRUE);
                     ret = ret && (s->maxDescriptorSetUpdateAfterBindInputAttachments >= 256);
                     ret = ret && (s->maxDescriptorSetUpdateAfterBindSampledImages >= 640);
                     ret = ret && (s->maxDescriptorSetUpdateAfterBindSamplers >= 80);
@@ -13265,8 +13265,8 @@ static const VpPropertyDesc propertyDesc = {
                     ret = ret && (s->shaderStorageBufferArrayNonUniformIndexingNative >= VK_FALSE);
                     ret = ret && (s->shaderStorageImageArrayNonUniformIndexingNative >= VK_FALSE);
                     ret = ret && (s->shaderUniformBufferArrayNonUniformIndexingNative >= VK_FALSE);
-                    ret = ret && (vpCheckFlags(s->supportedDepthResolveModes, (VK_RESOLVE_MODE_SAMPLE_ZERO_BIT)));
-                    ret = ret && (vpCheckFlags(s->supportedStencilResolveModes, (VK_RESOLVE_MODE_SAMPLE_ZERO_BIT)));
+                    ret = ret && (vpCheckFlags(s->supportedDepthResoinfvlkModes, (VK_RESOinfvlk_MODE_SAMPLE_ZERO_BIT)));
+                    ret = ret && (vpCheckFlags(s->supportedStencilResoinfvlkModes, (VK_RESOinfvlk_MODE_SAMPLE_ZERO_BIT)));
                 } break;
                 default: break;
             }
@@ -15542,7 +15542,7 @@ static const VkExtensionProperties deviceExtensions[] = {
     VkExtensionProperties{ VK_KHR_COPY_COMMANDS_2_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_CREATE_RENDERPASS_2_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DEDICATED_ALLOCATION_EXTENSION_NAME, 1 },
-    VkExtensionProperties{ VK_KHR_DEPTH_STENCIL_RESOLVE_EXTENSION_NAME, 1 },
+    VkExtensionProperties{ VK_KHR_DEPTH_STENCIL_RESOinfvlk_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DESCRIPTOR_UPDATE_TEMPLATE_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DEVICE_GROUP_EXTENSION_NAME, 4 },
     VkExtensionProperties{ VK_KHR_DRIVER_PROPERTIES_EXTENSION_NAME, 1 },
@@ -15890,7 +15890,7 @@ static const VkExtensionProperties deviceExtensions[] = {
     VkExtensionProperties{ VK_KHR_COPY_COMMANDS_2_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_CREATE_RENDERPASS_2_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DEDICATED_ALLOCATION_EXTENSION_NAME, 1 },
-    VkExtensionProperties{ VK_KHR_DEPTH_STENCIL_RESOLVE_EXTENSION_NAME, 1 },
+    VkExtensionProperties{ VK_KHR_DEPTH_STENCIL_RESOinfvlk_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DESCRIPTOR_UPDATE_TEMPLATE_EXTENSION_NAME, 1 },
     VkExtensionProperties{ VK_KHR_DEVICE_GROUP_EXTENSION_NAME, 4 },
     VkExtensionProperties{ VK_KHR_DRIVER_PROPERTIES_EXTENSION_NAME, 1 },
@@ -16351,8 +16351,8 @@ static const VpPropertyDesc propertyDesc = {
                     s->filterMinmaxImageComponentMapping = VK_FALSE;
                     s->filterMinmaxSingleComponentFormats = VK_FALSE;
                     s->framebufferIntegerColorSampleCounts |= (VK_SAMPLE_COUNT_1_BIT);
-                    s->independentResolve = VK_TRUE;
-                    s->independentResolveNone = VK_TRUE;
+                    s->independentResoinfvlk = VK_TRUE;
+                    s->independentResoinfvlkNone = VK_TRUE;
                     s->maxDescriptorSetUpdateAfterBindInputAttachments = 256;
                     s->maxDescriptorSetUpdateAfterBindSampledImages = 640;
                     s->maxDescriptorSetUpdateAfterBindSamplers = 80;
@@ -16392,8 +16392,8 @@ static const VpPropertyDesc propertyDesc = {
                     s->shaderStorageBufferArrayNonUniformIndexingNative = VK_FALSE;
                     s->shaderStorageImageArrayNonUniformIndexingNative = VK_FALSE;
                     s->shaderUniformBufferArrayNonUniformIndexingNative = VK_FALSE;
-                    s->supportedDepthResolveModes |= (VK_RESOLVE_MODE_SAMPLE_ZERO_BIT | VK_RESOLVE_MODE_MIN_BIT | VK_RESOLVE_MODE_MAX_BIT);
-                    s->supportedStencilResolveModes |= (VK_RESOLVE_MODE_SAMPLE_ZERO_BIT);
+                    s->supportedDepthResoinfvlkModes |= (VK_RESOinfvlk_MODE_SAMPLE_ZERO_BIT | VK_RESOinfvlk_MODE_MIN_BIT | VK_RESOinfvlk_MODE_MAX_BIT);
+                    s->supportedStencilResoinfvlkModes |= (VK_RESOinfvlk_MODE_SAMPLE_ZERO_BIT);
                 } break;
                 default: break;
             }
@@ -16612,8 +16612,8 @@ static const VpPropertyDesc propertyDesc = {
                     ret = ret && (s->filterMinmaxImageComponentMapping >= VK_FALSE);
                     ret = ret && (s->filterMinmaxSingleComponentFormats >= VK_FALSE);
                     ret = ret && (vpCheckFlags(s->framebufferIntegerColorSampleCounts, (VK_SAMPLE_COUNT_1_BIT)));
-                    ret = ret && (s->independentResolve >= VK_TRUE);
-                    ret = ret && (s->independentResolveNone >= VK_TRUE);
+                    ret = ret && (s->independentResoinfvlk >= VK_TRUE);
+                    ret = ret && (s->independentResoinfvlkNone >= VK_TRUE);
                     ret = ret && (s->maxDescriptorSetUpdateAfterBindInputAttachments >= 256);
                     ret = ret && (s->maxDescriptorSetUpdateAfterBindSampledImages >= 640);
                     ret = ret && (s->maxDescriptorSetUpdateAfterBindSamplers >= 80);
@@ -16653,8 +16653,8 @@ static const VpPropertyDesc propertyDesc = {
                     ret = ret && (s->shaderStorageBufferArrayNonUniformIndexingNative >= VK_FALSE);
                     ret = ret && (s->shaderStorageImageArrayNonUniformIndexingNative >= VK_FALSE);
                     ret = ret && (s->shaderUniformBufferArrayNonUniformIndexingNative >= VK_FALSE);
-                    ret = ret && (vpCheckFlags(s->supportedDepthResolveModes, (VK_RESOLVE_MODE_SAMPLE_ZERO_BIT | VK_RESOLVE_MODE_MIN_BIT | VK_RESOLVE_MODE_MAX_BIT)));
-                    ret = ret && (vpCheckFlags(s->supportedStencilResolveModes, (VK_RESOLVE_MODE_SAMPLE_ZERO_BIT)));
+                    ret = ret && (vpCheckFlags(s->supportedDepthResoinfvlkModes, (VK_RESOinfvlk_MODE_SAMPLE_ZERO_BIT | VK_RESOinfvlk_MODE_MIN_BIT | VK_RESOinfvlk_MODE_MAX_BIT)));
+                    ret = ret && (vpCheckFlags(s->supportedStencilResoinfvlkModes, (VK_RESOinfvlk_MODE_SAMPLE_ZERO_BIT)));
                 } break;
                 default: break;
             }
@@ -20560,8 +20560,8 @@ static const VpPropertyDesc propertyDesc = {
                     s->filterMinmaxImageComponentMapping = VK_FALSE;
                     s->filterMinmaxSingleComponentFormats = VK_FALSE;
                     s->framebufferIntegerColorSampleCounts |= (VK_SAMPLE_COUNT_1_BIT);
-                    s->independentResolve = VK_FALSE;
-                    s->independentResolveNone = VK_FALSE;
+                    s->independentResoinfvlk = VK_FALSE;
+                    s->independentResoinfvlkNone = VK_FALSE;
                     s->maxDescriptorSetUpdateAfterBindInputAttachments = 0;
                     s->maxDescriptorSetUpdateAfterBindSampledImages = 0;
                     s->maxDescriptorSetUpdateAfterBindSamplers = 0;
@@ -20613,8 +20613,8 @@ static const VpPropertyDesc propertyDesc = {
                     ret = ret && (s->filterMinmaxImageComponentMapping >= VK_FALSE);
                     ret = ret && (s->filterMinmaxSingleComponentFormats >= VK_FALSE);
                     ret = ret && (vpCheckFlags(s->framebufferIntegerColorSampleCounts, (VK_SAMPLE_COUNT_1_BIT)));
-                    ret = ret && (s->independentResolve >= VK_FALSE);
-                    ret = ret && (s->independentResolveNone >= VK_FALSE);
+                    ret = ret && (s->independentResoinfvlk >= VK_FALSE);
+                    ret = ret && (s->independentResoinfvlkNone >= VK_FALSE);
                     ret = ret && (s->maxDescriptorSetUpdateAfterBindInputAttachments >= 0);
                     ret = ret && (s->maxDescriptorSetUpdateAfterBindSampledImages >= 0);
                     ret = ret && (s->maxDescriptorSetUpdateAfterBindSamplers >= 0);
@@ -21253,8 +21253,8 @@ static const VpPropertyDesc propertyDesc = {
                     s->filterMinmaxImageComponentMapping = VK_FALSE;
                     s->filterMinmaxSingleComponentFormats = VK_FALSE;
                     s->framebufferIntegerColorSampleCounts |= (VK_SAMPLE_COUNT_1_BIT);
-                    s->independentResolve = VK_FALSE;
-                    s->independentResolveNone = VK_FALSE;
+                    s->independentResoinfvlk = VK_FALSE;
+                    s->independentResoinfvlkNone = VK_FALSE;
                     s->maxDescriptorSetUpdateAfterBindInputAttachments = 0;
                     s->maxDescriptorSetUpdateAfterBindSampledImages = 0;
                     s->maxDescriptorSetUpdateAfterBindSamplers = 0;
@@ -21306,8 +21306,8 @@ static const VpPropertyDesc propertyDesc = {
                     ret = ret && (s->filterMinmaxImageComponentMapping >= VK_FALSE);
                     ret = ret && (s->filterMinmaxSingleComponentFormats >= VK_FALSE);
                     ret = ret && (vpCheckFlags(s->framebufferIntegerColorSampleCounts, (VK_SAMPLE_COUNT_1_BIT)));
-                    ret = ret && (s->independentResolve >= VK_FALSE);
-                    ret = ret && (s->independentResolveNone >= VK_FALSE);
+                    ret = ret && (s->independentResoinfvlk >= VK_FALSE);
+                    ret = ret && (s->independentResoinfvlkNone >= VK_FALSE);
                     ret = ret && (s->maxDescriptorSetUpdateAfterBindInputAttachments >= 0);
                     ret = ret && (s->maxDescriptorSetUpdateAfterBindSampledImages >= 0);
                     ret = ret && (s->maxDescriptorSetUpdateAfterBindSamplers >= 0);
@@ -22967,7 +22967,7 @@ struct FeaturesChain {
     VkPhysicalDeviceLinearColorAttachmentFeaturesNV physicalDeviceLinearColorAttachmentFeaturesNV{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LINEAR_COLOR_ATTACHMENT_FEATURES_NV, nullptr };
     VkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT physicalDeviceGraphicsPipelineLibraryFeaturesEXT{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GRAPHICS_PIPELINE_LIBRARY_FEATURES_EXT, nullptr };
     VkPhysicalDevicePipelineBinaryFeaturesKHR physicalDevicePipelineBinaryFeaturesKHR{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PIPELINE_BINARY_FEATURES_KHR, nullptr };
-    VkPhysicalDeviceDescriptorSetHostMappingFeaturesVALVE physicalDeviceDescriptorSetHostMappingFeaturesVALVE{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_SET_HOST_MAPPING_FEATURES_VALVE, nullptr };
+    VkPhysicalDeviceDescriptorSetHostMappingFeaturesVAinfvlk physicalDeviceDescriptorSetHostMappingFeaturesVAinfvlk{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_SET_HOST_MAPPING_FEATURES_VAinfvlk, nullptr };
     VkPhysicalDeviceNestedCommandBufferFeaturesEXT physicalDeviceNestedCommandBufferFeaturesEXT{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_NESTED_COMMAND_BUFFER_FEATURES_EXT, nullptr };
     VkPhysicalDeviceShaderModuleIdentifierFeaturesEXT physicalDeviceShaderModuleIdentifierFeaturesEXT{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_MODULE_IDENTIFIER_FEATURES_EXT, nullptr };
     VkPhysicalDeviceImageCompressionControlFeaturesEXT physicalDeviceImageCompressionControlFeaturesEXT{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_COMPRESSION_CONTROL_FEATURES_EXT, nullptr };
@@ -23017,7 +23017,7 @@ struct FeaturesChain {
     VkPhysicalDeviceDescriptorPoolOverallocationFeaturesNV physicalDeviceDescriptorPoolOverallocationFeaturesNV{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_POOL_OVERALLOCATION_FEATURES_NV, nullptr };
     VkPhysicalDevicePerStageDescriptorSetFeaturesNV physicalDevicePerStageDescriptorSetFeaturesNV{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PER_STAGE_DESCRIPTOR_SET_FEATURES_NV, nullptr };
 #ifdef VK_USE_PLATFORM_ANDROID_KHR
-    VkPhysicalDeviceExternalFormatResolveFeaturesANDROID physicalDeviceExternalFormatResolveFeaturesANDROID{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FORMAT_RESOLVE_FEATURES_ANDROID, nullptr };
+    VkPhysicalDeviceExternalFormatResoinfvlkFeaturesANDROID physicalDeviceExternalFormatResoinfvlkFeaturesANDROID{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FORMAT_RESOinfvlk_FEATURES_ANDROID, nullptr };
 #endif
 #ifdef VK_ENABLE_BETA_EXTENSIONS
     VkPhysicalDeviceCudaKernelLaunchFeaturesNV physicalDeviceCudaKernelLaunchFeaturesNV{ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_FEATURES_NV, nullptr };
@@ -23200,7 +23200,7 @@ struct FeaturesChain {
         this->structureSize.insert({ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LINEAR_COLOR_ATTACHMENT_FEATURES_NV, size<VkPhysicalDeviceLinearColorAttachmentFeaturesNV>() });
         this->structureSize.insert({ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GRAPHICS_PIPELINE_LIBRARY_FEATURES_EXT, size<VkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT>() });
         this->structureSize.insert({ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PIPELINE_BINARY_FEATURES_KHR, size<VkPhysicalDevicePipelineBinaryFeaturesKHR>() });
-        this->structureSize.insert({ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_SET_HOST_MAPPING_FEATURES_VALVE, size<VkPhysicalDeviceDescriptorSetHostMappingFeaturesVALVE>() });
+        this->structureSize.insert({ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_SET_HOST_MAPPING_FEATURES_VAinfvlk, size<VkPhysicalDeviceDescriptorSetHostMappingFeaturesVAinfvlk>() });
         this->structureSize.insert({ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_NESTED_COMMAND_BUFFER_FEATURES_EXT, size<VkPhysicalDeviceNestedCommandBufferFeaturesEXT>() });
         this->structureSize.insert({ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_MODULE_IDENTIFIER_FEATURES_EXT, size<VkPhysicalDeviceShaderModuleIdentifierFeaturesEXT>() });
         this->structureSize.insert({ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_COMPRESSION_CONTROL_FEATURES_EXT, size<VkPhysicalDeviceImageCompressionControlFeaturesEXT>() });
@@ -23250,7 +23250,7 @@ struct FeaturesChain {
         this->structureSize.insert({ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_POOL_OVERALLOCATION_FEATURES_NV, size<VkPhysicalDeviceDescriptorPoolOverallocationFeaturesNV>() });
         this->structureSize.insert({ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PER_STAGE_DESCRIPTOR_SET_FEATURES_NV, size<VkPhysicalDevicePerStageDescriptorSetFeaturesNV>() });
 #ifdef VK_USE_PLATFORM_ANDROID_KHR
-        this->structureSize.insert({ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FORMAT_RESOLVE_FEATURES_ANDROID, size<VkPhysicalDeviceExternalFormatResolveFeaturesANDROID>() });
+        this->structureSize.insert({ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_FORMAT_RESOinfvlk_FEATURES_ANDROID, size<VkPhysicalDeviceExternalFormatResoinfvlkFeaturesANDROID>() });
 #endif
 #ifdef VK_ENABLE_BETA_EXTENSIONS
         this->structureSize.insert({ VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_FEATURES_NV, size<VkPhysicalDeviceCudaKernelLaunchFeaturesNV>() });
@@ -23578,8 +23578,8 @@ struct FeaturesChain {
         pNext = &physicalDeviceGraphicsPipelineLibraryFeaturesEXT;
         physicalDevicePipelineBinaryFeaturesKHR.pNext = pNext;
         pNext = &physicalDevicePipelineBinaryFeaturesKHR;
-        physicalDeviceDescriptorSetHostMappingFeaturesVALVE.pNext = pNext;
-        pNext = &physicalDeviceDescriptorSetHostMappingFeaturesVALVE;
+        physicalDeviceDescriptorSetHostMappingFeaturesVAinfvlk.pNext = pNext;
+        pNext = &physicalDeviceDescriptorSetHostMappingFeaturesVAinfvlk;
         physicalDeviceNestedCommandBufferFeaturesEXT.pNext = pNext;
         pNext = &physicalDeviceNestedCommandBufferFeaturesEXT;
         physicalDeviceShaderModuleIdentifierFeaturesEXT.pNext = pNext;
@@ -23671,8 +23671,8 @@ struct FeaturesChain {
         physicalDevicePerStageDescriptorSetFeaturesNV.pNext = pNext;
         pNext = &physicalDevicePerStageDescriptorSetFeaturesNV;
 #ifdef VK_USE_PLATFORM_ANDROID_KHR
-        physicalDeviceExternalFormatResolveFeaturesANDROID.pNext = pNext;
-        pNext = &physicalDeviceExternalFormatResolveFeaturesANDROID;
+        physicalDeviceExternalFormatResoinfvlkFeaturesANDROID.pNext = pNext;
+        pNext = &physicalDeviceExternalFormatResoinfvlkFeaturesANDROID;
 #endif
 #ifdef VK_ENABLE_BETA_EXTENSIONS
         physicalDeviceCudaKernelLaunchFeaturesNV.pNext = pNext;

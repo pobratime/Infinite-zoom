@@ -319,10 +319,10 @@ export namespace VULKAN_HPP_NAMESPACE
   using VULKAN_HPP_NAMESPACE::DescriptorBindingFlagsEXT;
   using VULKAN_HPP_NAMESPACE::DriverId;
   using VULKAN_HPP_NAMESPACE::DriverIdKHR;
-  using VULKAN_HPP_NAMESPACE::ResolveModeFlagBits;
-  using VULKAN_HPP_NAMESPACE::ResolveModeFlagBitsKHR;
-  using VULKAN_HPP_NAMESPACE::ResolveModeFlags;
-  using VULKAN_HPP_NAMESPACE::ResolveModeFlagsKHR;
+  using VULKAN_HPP_NAMESPACE::ResoinfvlkModeFlagBits;
+  using VULKAN_HPP_NAMESPACE::ResoinfvlkModeFlagBitsKHR;
+  using VULKAN_HPP_NAMESPACE::ResoinfvlkModeFlags;
+  using VULKAN_HPP_NAMESPACE::ResoinfvlkModeFlagsKHR;
   using VULKAN_HPP_NAMESPACE::SamplerReductionMode;
   using VULKAN_HPP_NAMESPACE::SamplerReductionModeEXT;
   using VULKAN_HPP_NAMESPACE::SemaphoreType;
@@ -1671,9 +1671,9 @@ export namespace VULKAN_HPP_NAMESPACE
   using VULKAN_HPP_NAMESPACE::EXTFilterCubicExtensionName;
   using VULKAN_HPP_NAMESPACE::EXTFilterCubicSpecVersion;
 
-  //=== VK_QCOM_render_pass_shader_resolve ===
-  using VULKAN_HPP_NAMESPACE::QCOMRenderPassShaderResolveExtensionName;
-  using VULKAN_HPP_NAMESPACE::QCOMRenderPassShaderResolveSpecVersion;
+  //=== VK_QCOM_render_pass_shader_resoinfvlk ===
+  using VULKAN_HPP_NAMESPACE::QCOMRenderPassShaderResoinfvlkExtensionName;
+  using VULKAN_HPP_NAMESPACE::QCOMRenderPassShaderResoinfvlkSpecVersion;
 
   //=== VK_EXT_global_priority ===
   using VULKAN_HPP_NAMESPACE::EXTGlobalPriorityExtensionName;
@@ -1756,9 +1756,9 @@ export namespace VULKAN_HPP_NAMESPACE
   using VULKAN_HPP_NAMESPACE::NVShaderSubgroupPartitionedExtensionName;
   using VULKAN_HPP_NAMESPACE::NVShaderSubgroupPartitionedSpecVersion;
 
-  //=== VK_KHR_depth_stencil_resolve ===
-  using VULKAN_HPP_NAMESPACE::KHRDepthStencilResolveExtensionName;
-  using VULKAN_HPP_NAMESPACE::KHRDepthStencilResolveSpecVersion;
+  //=== VK_KHR_depth_stencil_resoinfvlk ===
+  using VULKAN_HPP_NAMESPACE::KHRDepthStencilResoinfvlkExtensionName;
+  using VULKAN_HPP_NAMESPACE::KHRDepthStencilResoinfvlkSpecVersion;
 
   //=== VK_KHR_swapchain_mutable_format ===
   using VULKAN_HPP_NAMESPACE::KHRSwapchainMutableFormatExtensionName;
@@ -2210,9 +2210,9 @@ export namespace VULKAN_HPP_NAMESPACE
   using VULKAN_HPP_NAMESPACE::EXTDirectfbSurfaceSpecVersion;
 #endif /*VK_USE_PLATFORM_DIRECTFB_EXT*/
 
-  //=== VK_VALVE_mutable_descriptor_type ===
-  using VULKAN_HPP_NAMESPACE::VALVEMutableDescriptorTypeExtensionName;
-  using VULKAN_HPP_NAMESPACE::VALVEMutableDescriptorTypeSpecVersion;
+  //=== VK_VAinfvlk_mutable_descriptor_type ===
+  using VULKAN_HPP_NAMESPACE::VAinfvlkMutableDescriptorTypeExtensionName;
+  using VULKAN_HPP_NAMESPACE::VAinfvlkMutableDescriptorTypeSpecVersion;
 
   //=== VK_EXT_vertex_input_dynamic_state ===
   using VULKAN_HPP_NAMESPACE::EXTVertexInputDynamicStateExtensionName;
@@ -2378,9 +2378,9 @@ export namespace VULKAN_HPP_NAMESPACE
   using VULKAN_HPP_NAMESPACE::EXTImageSlicedViewOf3DSpecVersion;
   using VULKAN_HPP_NAMESPACE::Remaining3DSlicesEXT;
 
-  //=== VK_VALVE_descriptor_set_host_mapping ===
-  using VULKAN_HPP_NAMESPACE::VALVEDescriptorSetHostMappingExtensionName;
-  using VULKAN_HPP_NAMESPACE::VALVEDescriptorSetHostMappingSpecVersion;
+  //=== VK_VAinfvlk_descriptor_set_host_mapping ===
+  using VULKAN_HPP_NAMESPACE::VAinfvlkDescriptorSetHostMappingExtensionName;
+  using VULKAN_HPP_NAMESPACE::VAinfvlkDescriptorSetHostMappingSpecVersion;
 
   //=== VK_EXT_depth_clamp_zero_one ===
   using VULKAN_HPP_NAMESPACE::EXTDepthClampZeroOneExtensionName;
@@ -2476,9 +2476,9 @@ export namespace VULKAN_HPP_NAMESPACE
   using VULKAN_HPP_NAMESPACE::EXTPipelineProtectedAccessSpecVersion;
 
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
-  //=== VK_ANDROID_external_format_resolve ===
-  using VULKAN_HPP_NAMESPACE::ANDROIDExternalFormatResolveExtensionName;
-  using VULKAN_HPP_NAMESPACE::ANDROIDExternalFormatResolveSpecVersion;
+  //=== VK_ANDROID_external_format_resoinfvlk ===
+  using VULKAN_HPP_NAMESPACE::ANDROIDExternalFormatResoinfvlkExtensionName;
+  using VULKAN_HPP_NAMESPACE::ANDROIDExternalFormatResoinfvlkSpecVersion;
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
   //=== VK_KHR_maintenance5 ===
@@ -2866,7 +2866,7 @@ export namespace VULKAN_HPP_NAMESPACE
   using VULKAN_HPP_NAMESPACE::ImageCreateInfo;
   using VULKAN_HPP_NAMESPACE::ImageFormatProperties;
   using VULKAN_HPP_NAMESPACE::ImageMemoryBarrier;
-  using VULKAN_HPP_NAMESPACE::ImageResolve;
+  using VULKAN_HPP_NAMESPACE::ImageResoinfvlk;
   using VULKAN_HPP_NAMESPACE::ImageSubresource;
   using VULKAN_HPP_NAMESPACE::ImageSubresourceLayers;
   using VULKAN_HPP_NAMESPACE::ImageSubresourceRange;
@@ -3101,8 +3101,8 @@ export namespace VULKAN_HPP_NAMESPACE
   using VULKAN_HPP_NAMESPACE::PhysicalDevice8BitStorageFeaturesKHR;
   using VULKAN_HPP_NAMESPACE::PhysicalDeviceBufferDeviceAddressFeatures;
   using VULKAN_HPP_NAMESPACE::PhysicalDeviceBufferDeviceAddressFeaturesKHR;
-  using VULKAN_HPP_NAMESPACE::PhysicalDeviceDepthStencilResolveProperties;
-  using VULKAN_HPP_NAMESPACE::PhysicalDeviceDepthStencilResolvePropertiesKHR;
+  using VULKAN_HPP_NAMESPACE::PhysicalDeviceDepthStencilResoinfvlkProperties;
+  using VULKAN_HPP_NAMESPACE::PhysicalDeviceDepthStencilResoinfvlkPropertiesKHR;
   using VULKAN_HPP_NAMESPACE::PhysicalDeviceDescriptorIndexingFeatures;
   using VULKAN_HPP_NAMESPACE::PhysicalDeviceDescriptorIndexingFeaturesEXT;
   using VULKAN_HPP_NAMESPACE::PhysicalDeviceDescriptorIndexingProperties;
@@ -3158,8 +3158,8 @@ export namespace VULKAN_HPP_NAMESPACE
   using VULKAN_HPP_NAMESPACE::SubpassDependency2KHR;
   using VULKAN_HPP_NAMESPACE::SubpassDescription2;
   using VULKAN_HPP_NAMESPACE::SubpassDescription2KHR;
-  using VULKAN_HPP_NAMESPACE::SubpassDescriptionDepthStencilResolve;
-  using VULKAN_HPP_NAMESPACE::SubpassDescriptionDepthStencilResolveKHR;
+  using VULKAN_HPP_NAMESPACE::SubpassDescriptionDepthStencilResoinfvlk;
+  using VULKAN_HPP_NAMESPACE::SubpassDescriptionDepthStencilResoinfvlkKHR;
   using VULKAN_HPP_NAMESPACE::SubpassEndInfo;
   using VULKAN_HPP_NAMESPACE::SubpassEndInfoKHR;
   using VULKAN_HPP_NAMESPACE::TimelineSemaphoreSubmitInfo;
@@ -3204,8 +3204,8 @@ export namespace VULKAN_HPP_NAMESPACE
   using VULKAN_HPP_NAMESPACE::ImageCopy2KHR;
   using VULKAN_HPP_NAMESPACE::ImageMemoryBarrier2;
   using VULKAN_HPP_NAMESPACE::ImageMemoryBarrier2KHR;
-  using VULKAN_HPP_NAMESPACE::ImageResolve2;
-  using VULKAN_HPP_NAMESPACE::ImageResolve2KHR;
+  using VULKAN_HPP_NAMESPACE::ImageResoinfvlk2;
+  using VULKAN_HPP_NAMESPACE::ImageResoinfvlk2KHR;
   using VULKAN_HPP_NAMESPACE::MemoryBarrier2;
   using VULKAN_HPP_NAMESPACE::MemoryBarrier2KHR;
   using VULKAN_HPP_NAMESPACE::PhysicalDeviceDynamicRenderingFeatures;
@@ -3262,8 +3262,8 @@ export namespace VULKAN_HPP_NAMESPACE
   using VULKAN_HPP_NAMESPACE::RenderingAttachmentInfoKHR;
   using VULKAN_HPP_NAMESPACE::RenderingInfo;
   using VULKAN_HPP_NAMESPACE::RenderingInfoKHR;
-  using VULKAN_HPP_NAMESPACE::ResolveImageInfo2;
-  using VULKAN_HPP_NAMESPACE::ResolveImageInfo2KHR;
+  using VULKAN_HPP_NAMESPACE::ResoinfvlkImageInfo2;
+  using VULKAN_HPP_NAMESPACE::ResoinfvlkImageInfo2KHR;
   using VULKAN_HPP_NAMESPACE::SemaphoreSubmitInfo;
   using VULKAN_HPP_NAMESPACE::SemaphoreSubmitInfoKHR;
   using VULKAN_HPP_NAMESPACE::ShaderRequiredSubgroupSizeCreateInfoEXT;
@@ -4339,7 +4339,7 @@ export namespace VULKAN_HPP_NAMESPACE
   //=== VK_EXT_multisampled_render_to_single_sampled ===
   using VULKAN_HPP_NAMESPACE::MultisampledRenderToSingleSampledInfoEXT;
   using VULKAN_HPP_NAMESPACE::PhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT;
-  using VULKAN_HPP_NAMESPACE::SubpassResolvePerformanceQueryEXT;
+  using VULKAN_HPP_NAMESPACE::SubpassResoinfvlkPerformanceQueryEXT;
 
   //=== VK_EXT_extended_dynamic_state2 ===
   using VULKAN_HPP_NAMESPACE::PhysicalDeviceExtendedDynamicState2FeaturesEXT;
@@ -4422,10 +4422,10 @@ export namespace VULKAN_HPP_NAMESPACE
   using VULKAN_HPP_NAMESPACE::ImageViewSlicedCreateInfoEXT;
   using VULKAN_HPP_NAMESPACE::PhysicalDeviceImageSlicedViewOf3DFeaturesEXT;
 
-  //=== VK_VALVE_descriptor_set_host_mapping ===
-  using VULKAN_HPP_NAMESPACE::DescriptorSetBindingReferenceVALVE;
-  using VULKAN_HPP_NAMESPACE::DescriptorSetLayoutHostMappingInfoVALVE;
-  using VULKAN_HPP_NAMESPACE::PhysicalDeviceDescriptorSetHostMappingFeaturesVALVE;
+  //=== VK_VAinfvlk_descriptor_set_host_mapping ===
+  using VULKAN_HPP_NAMESPACE::DescriptorSetBindingReferenceVAinfvlk;
+  using VULKAN_HPP_NAMESPACE::DescriptorSetLayoutHostMappingInfoVAinfvlk;
+  using VULKAN_HPP_NAMESPACE::PhysicalDeviceDescriptorSetHostMappingFeaturesVAinfvlk;
 
   //=== VK_EXT_non_seamless_cube_map ===
   using VULKAN_HPP_NAMESPACE::PhysicalDeviceNonSeamlessCubeMapFeaturesEXT;
@@ -4521,10 +4521,10 @@ export namespace VULKAN_HPP_NAMESPACE
   using VULKAN_HPP_NAMESPACE::PhysicalDeviceLegacyDitheringFeaturesEXT;
 
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
-  //=== VK_ANDROID_external_format_resolve ===
-  using VULKAN_HPP_NAMESPACE::AndroidHardwareBufferFormatResolvePropertiesANDROID;
-  using VULKAN_HPP_NAMESPACE::PhysicalDeviceExternalFormatResolveFeaturesANDROID;
-  using VULKAN_HPP_NAMESPACE::PhysicalDeviceExternalFormatResolvePropertiesANDROID;
+  //=== VK_ANDROID_external_format_resoinfvlk ===
+  using VULKAN_HPP_NAMESPACE::AndroidHardwareBufferFormatResoinfvlkPropertiesANDROID;
+  using VULKAN_HPP_NAMESPACE::PhysicalDeviceExternalFormatResoinfvlkFeaturesANDROID;
+  using VULKAN_HPP_NAMESPACE::PhysicalDeviceExternalFormatResoinfvlkPropertiesANDROID;
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
   //=== VK_AMD_anti_lag ===
@@ -4581,11 +4581,11 @@ export namespace VULKAN_HPP_NAMESPACE
 
   //=== VK_EXT_mutable_descriptor_type ===
   using VULKAN_HPP_NAMESPACE::MutableDescriptorTypeCreateInfoEXT;
-  using VULKAN_HPP_NAMESPACE::MutableDescriptorTypeCreateInfoVALVE;
+  using VULKAN_HPP_NAMESPACE::MutableDescriptorTypeCreateInfoVAinfvlk;
   using VULKAN_HPP_NAMESPACE::MutableDescriptorTypeListEXT;
-  using VULKAN_HPP_NAMESPACE::MutableDescriptorTypeListVALVE;
+  using VULKAN_HPP_NAMESPACE::MutableDescriptorTypeListVAinfvlk;
   using VULKAN_HPP_NAMESPACE::PhysicalDeviceMutableDescriptorTypeFeaturesEXT;
-  using VULKAN_HPP_NAMESPACE::PhysicalDeviceMutableDescriptorTypeFeaturesVALVE;
+  using VULKAN_HPP_NAMESPACE::PhysicalDeviceMutableDescriptorTypeFeaturesVAinfvlk;
 
   //=== VK_EXT_legacy_vertex_attributes ===
   using VULKAN_HPP_NAMESPACE::PhysicalDeviceLegacyVertexAttributesFeaturesEXT;
@@ -5803,7 +5803,7 @@ export namespace std
   template <>
   struct hash<VULKAN_HPP_NAMESPACE::ImageCopy>;
   template <>
-  struct hash<VULKAN_HPP_NAMESPACE::ImageResolve>;
+  struct hash<VULKAN_HPP_NAMESPACE::ImageResoinfvlk>;
   template <>
   struct hash<VULKAN_HPP_NAMESPACE::ImageSubresourceLayers>;
   template <>
@@ -5995,9 +5995,9 @@ export namespace std
   template <>
   struct hash<VULKAN_HPP_NAMESPACE::DescriptorSetVariableDescriptorCountLayoutSupport>;
   template <>
-  struct hash<VULKAN_HPP_NAMESPACE::SubpassDescriptionDepthStencilResolve>;
+  struct hash<VULKAN_HPP_NAMESPACE::SubpassDescriptionDepthStencilResoinfvlk>;
   template <>
-  struct hash<VULKAN_HPP_NAMESPACE::PhysicalDeviceDepthStencilResolveProperties>;
+  struct hash<VULKAN_HPP_NAMESPACE::PhysicalDeviceDepthStencilResoinfvlkProperties>;
   template <>
   struct hash<VULKAN_HPP_NAMESPACE::PhysicalDeviceScalarBlockLayoutFeatures>;
   template <>
@@ -6105,7 +6105,7 @@ export namespace std
   template <>
   struct hash<VULKAN_HPP_NAMESPACE::BlitImageInfo2>;
   template <>
-  struct hash<VULKAN_HPP_NAMESPACE::ResolveImageInfo2>;
+  struct hash<VULKAN_HPP_NAMESPACE::ResoinfvlkImageInfo2>;
   template <>
   struct hash<VULKAN_HPP_NAMESPACE::BufferCopy2>;
   template <>
@@ -6115,7 +6115,7 @@ export namespace std
   template <>
   struct hash<VULKAN_HPP_NAMESPACE::BufferImageCopy2>;
   template <>
-  struct hash<VULKAN_HPP_NAMESPACE::ImageResolve2>;
+  struct hash<VULKAN_HPP_NAMESPACE::ImageResoinfvlk2>;
   template <>
   struct hash<VULKAN_HPP_NAMESPACE::PhysicalDeviceSubgroupSizeControlFeatures>;
   template <>
@@ -7765,7 +7765,7 @@ export namespace std
   template <>
   struct hash<VULKAN_HPP_NAMESPACE::PhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT>;
   template <>
-  struct hash<VULKAN_HPP_NAMESPACE::SubpassResolvePerformanceQueryEXT>;
+  struct hash<VULKAN_HPP_NAMESPACE::SubpassResoinfvlkPerformanceQueryEXT>;
   template <>
   struct hash<VULKAN_HPP_NAMESPACE::MultisampledRenderToSingleSampledInfoEXT>;
 
@@ -7893,13 +7893,13 @@ export namespace std
   template <>
   struct hash<VULKAN_HPP_NAMESPACE::ImageViewSlicedCreateInfoEXT>;
 
-  //=== VK_VALVE_descriptor_set_host_mapping ===
+  //=== VK_VAinfvlk_descriptor_set_host_mapping ===
   template <>
-  struct hash<VULKAN_HPP_NAMESPACE::PhysicalDeviceDescriptorSetHostMappingFeaturesVALVE>;
+  struct hash<VULKAN_HPP_NAMESPACE::PhysicalDeviceDescriptorSetHostMappingFeaturesVAinfvlk>;
   template <>
-  struct hash<VULKAN_HPP_NAMESPACE::DescriptorSetBindingReferenceVALVE>;
+  struct hash<VULKAN_HPP_NAMESPACE::DescriptorSetBindingReferenceVAinfvlk>;
   template <>
-  struct hash<VULKAN_HPP_NAMESPACE::DescriptorSetLayoutHostMappingInfoVALVE>;
+  struct hash<VULKAN_HPP_NAMESPACE::DescriptorSetLayoutHostMappingInfoVAinfvlk>;
 
   //=== VK_EXT_non_seamless_cube_map ===
   template <>
@@ -8048,13 +8048,13 @@ export namespace std
   struct hash<VULKAN_HPP_NAMESPACE::PhysicalDeviceLegacyDitheringFeaturesEXT>;
 
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
-  //=== VK_ANDROID_external_format_resolve ===
+  //=== VK_ANDROID_external_format_resoinfvlk ===
   template <>
-  struct hash<VULKAN_HPP_NAMESPACE::PhysicalDeviceExternalFormatResolveFeaturesANDROID>;
+  struct hash<VULKAN_HPP_NAMESPACE::PhysicalDeviceExternalFormatResoinfvlkFeaturesANDROID>;
   template <>
-  struct hash<VULKAN_HPP_NAMESPACE::PhysicalDeviceExternalFormatResolvePropertiesANDROID>;
+  struct hash<VULKAN_HPP_NAMESPACE::PhysicalDeviceExternalFormatResoinfvlkPropertiesANDROID>;
   template <>
-  struct hash<VULKAN_HPP_NAMESPACE::AndroidHardwareBufferFormatResolvePropertiesANDROID>;
+  struct hash<VULKAN_HPP_NAMESPACE::AndroidHardwareBufferFormatResoinfvlkPropertiesANDROID>;
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
   //=== VK_AMD_anti_lag ===

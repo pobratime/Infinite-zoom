@@ -1,5 +1,6 @@
 CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o: \
   /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/main.cpp \
+  /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_app.hpp \
   /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/dependencies/GLFW/glfw3.h \
   /opt/homebrew/Cellar/llvm/20.1.5/bin/../include/c++/v1/stddef.h \
   /opt/homebrew/Cellar/llvm/20.1.5/bin/../include/c++/v1/__config \
@@ -40,13 +41,6 @@ CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/usr/include/_types/_intmax_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/usr/include/_types/_uintmax_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gltypes.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/usr/include/os/availability.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/usr/include/AvailabilityInternal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/usr/include/AvailabilityVersions.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/usr/include/AvailabilityInternalLegacy.h \
   /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/dependencies/vulkan/vulkan.h \
   /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/dependencies/vulkan/vk_platform.h \
   /opt/homebrew/Cellar/llvm/20.1.5/lib/clang/20/include/__stddef_rsize_t.h \
@@ -61,6 +55,14 @@ CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o: \
   /usr/local/include/vk_video/vulkan_video_codec_av1std.h \
   /usr/local/include/vk_video/vulkan_video_codec_av1std_decode.h \
   /usr/local/include/vk_video/vulkan_video_codec_av1std_encode.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gltypes.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/usr/include/os/availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/usr/include/AvailabilityInternal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/usr/include/AvailabilityVersions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/usr/include/AvailabilityInternalLegacy.h \
+  /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_vulkan.hpp \
   /opt/homebrew/Cellar/llvm/20.1.5/bin/../include/c++/v1/iostream \
   /opt/homebrew/Cellar/llvm/20.1.5/bin/../include/c++/v1/version \
   /opt/homebrew/Cellar/llvm/20.1.5/bin/../include/c++/v1/ios \
@@ -804,4 +806,5 @@ CMakeFiles/infinite_zoom_vulkan.dir/src/main.cpp.o: \
   /opt/homebrew/Cellar/llvm/20.1.5/bin/../include/c++/v1/stack \
   /opt/homebrew/Cellar/llvm/20.1.5/bin/../include/c++/v1/__fwd/stack.h \
   /opt/homebrew/Cellar/llvm/20.1.5/bin/../include/c++/v1/print \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/usr/include/unistd.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/usr/include/unistd.h \
+  /Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/src/infz_window.hpp

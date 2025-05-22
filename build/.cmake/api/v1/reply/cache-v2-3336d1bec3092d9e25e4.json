@@ -558,6 +558,10 @@
 			"properties" : 
 			[
 				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
 					"name" : "HELPSTRING",
 					"value" : "No help, variable specified on the command line."
 				}
@@ -1338,42 +1342,6 @@
 			"value" : "[/usr/local/lib/libvulkan.dylib][/usr/local/include][found components: glslc glslangValidator ][v1.4.313()]"
 		},
 		{
-			"name" : "Project_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan/build"
-		},
-		{
-			"name" : "Project_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "Project_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/Users/lukaajdukovic/Desktop/infinite_zoom_vulkan"
-		},
-		{
 			"name" : "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE",
 			"properties" : 
 			[
@@ -1448,18 +1416,6 @@
 			],
 			"type" : "PATH",
 			"value" : "/opt/homebrew/lib/cmake/glfw3"
-		},
-		{
-			"name" : "glfw_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for glfw."
-				}
-			],
-			"type" : "PATH",
-			"value" : "glfw_DIR-NOTFOUND"
 		},
 		{
 			"name" : "infinite_zoom_vulkan_BINARY_DIR",
